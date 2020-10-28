@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europe Data</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link />
+</head>
+<body>
+    <nav>
+    </nav>
+    <main class="mainContent">
+
+        <h1 id="title">Hospital Occupancy Data from ECDC</h1>
+        <p>The below chart shows hospital occupancy over time <span class="altFont">(</span><b>NOT</b> daily hospitalizations<span class="altFont">) </span>for the countries for which data have been provided by the <a href="https://www.ecdc.europa.eu/en/publications-data/download-data-hospital-and-icu-admission-rates-and-current-occupancy-covid-19">European Centre for Disease Prevention and Control</a><span class="altFont"> (</span>These data points were saved from their download, not fetched<span class="altFont">)</span>.</p> 
+        <p>Data are used in line with ECDC’s <a href="https://www.ecdc.europa.eu/en/copyright">copyright policy</a>.</p>
+        <p>Countries are visualized by color and include: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovenia, Spain, Sweden, United Kingdom 
+        </p>
+        <p>Some countries have more than one source, which is why they have multiple peaks.</p>
+        <p>Visualized using d3.</p>
+    </main>
+
+    <footer></footer>
+    
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="euroData.js"></script>
+    <script>
+        const w = 800;
+        const h = 600;
+        const padding = 50;
+        
+
+        function getData() {
+            try { 
+
+                const allData = euroData.map(element=>{
+                    return {
+                        country: element.country,
+                        date: element.date,
+                        value: element.value
+                    } 
+                });
+                
+                let country;
+                let minDate = new Date();
+                let maxDate = new Date();
+                let minVal = 0;
+                let maxVal = 0;
+                let arr = [];
+                let arrCountries = [];
+                let colorHue = 0;
+                allData.forEach((element, index)=>{
+                    //find min max values for scaling functions
+                    let checkDate = new Date(element.date);
+                    let checkVal = element.value;
+                    if (checkDate < minDate){
+                        minDate = checkDate;
+                    }
+                    if (checkDate > maxDate){
+                        maxDate = checkDate;
+                    }
+                    if (checkVal > maxVal){
+                        maxVal = checkVal;
+                    }
+
+                    //update country array
+                    if (country == element.country && element.date) {
+                        arr.push(element);
+                    }
+                    if (country != element.country || index == allData.length-1)  {
+                        //country val starts as '', so checks if any elements have been added
+                        if (arr.length){
+                            arrCountries.push(arr);
+                        }  
+                        country = element.country;   
+                        arr = [];          
+                    }
+
+                });
+                console.log(minDate, maxDate)
+                const xScale = d3.scaleTime()
+                        .domain([minDate, maxDate])  
+                        .range([padding, w - padding]); 
+
+                const yScale = d3.scaleLinear()
+                        .domain( [0, maxVal] )
+                        .range( [h - padding, padding] );
+
+                const xAxis = d3.axisBottom(xScale);
+                const yAxis = d3.axisLeft(yScale);
+            
+                
+                const svg = d3.select('.mainContent')
+                    .append('svg')
+                    .attr('width', w)
+                    .attr('height', h);
+
+                arrCountries.forEach(arr => {
+                    svg.selectAll(`circle.${arr.country}`)    
+                        .data(arr)  
+                        .enter()
+                        .append('circle')
+                        .attr('class', d => d.country)
+                        .attr('r', 2)
+                        .attr('cx', d => Math.floor(xScale(new Date(d.date))) )
+                        .attr('cy', d => Math.floor(yScale(d.value)) )  //already inverted in range scaling method
+                        .attr('fill', `hsl(${colorHue},90%,40%)`) 
+                        .attr('data-country', d => d.country)
+                        .attr('data-date', d => d.date)
+                        .attr('data-occupancy', d => d.value)
+                        .append('title')
+                        .text(d=>`Country: ${d.country}\nDate: ${d.date}\nOccupancies: ${d.value}`);
+                        
+                    colorHue += 15;
+                })
+                
+                svg.append('g')
+                    .attr('transform', 'translate(0, ' + (h - padding) + ')')
+                    .attr('id', 'x-axis')
+                    .call(xAxis);
+                svg.append('g')
+                    .attr('transform', `translate(${padding},0)`)
+                    .attr('id', 'y-axis')
+                    .call(yAxis);    
+                
+            }
+            
+            catch(error){
+                console.log(error);
+            }
+        }
+
+        getData();
+
+    </script>
+</body>
+</html>

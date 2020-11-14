@@ -1,1521 +1,2181 @@
-let euroData = [
+const euroData = [
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-01",
+		"year_week" : "2020-W14",
+		"value" : 856,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-02",
 		"year_week" : "2020-W14",
-		"value" : 1057,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 823,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-03",
+		"year_week" : "2020-W14",
+		"value" : 829,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-04",
+		"year_week" : "2020-W14",
+		"value" : 826,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-05",
+		"year_week" : "2020-W14",
+		"value" : 712,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-06",
+		"year_week" : "2020-W15",
+		"value" : 824,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-07",
+		"year_week" : "2020-W15",
+		"value" : 857,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-08",
 		"year_week" : "2020-W15",
-		"value" : 1096,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 829,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-09",
+		"year_week" : "2020-W15",
+		"value" : 820,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-10",
+		"year_week" : "2020-W15",
+		"value" : 771,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-11",
+		"year_week" : "2020-W15",
+		"value" : 790,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-12",
+		"year_week" : "2020-W15",
+		"value" : 792,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-13",
+		"year_week" : "2020-W16",
+		"value" : 742,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-14",
+		"year_week" : "2020-W16",
+		"value" : 759,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-15",
 		"year_week" : "2020-W16",
-		"value" : 1001,
-		"source" : "Surveillance",
-		"url" : "https://info.gesundheitsministerium.at/dashboard_Epidem.html?l=de"
+		"value" : 769,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-16",
 		"year_week" : "2020-W16",
-		"value" : 967,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 729,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-17",
 		"year_week" : "2020-W16",
-		"value" : 909,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 682,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-18",
+		"year_week" : "2020-W16",
+		"value" : 647,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-19",
 		"year_week" : "2020-W16",
-		"value" : 817,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 613,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-20",
+		"year_week" : "2020-W17",
+		"value" : 611,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-21",
 		"year_week" : "2020-W17",
-		"value" : 756,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 560,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-22",
 		"year_week" : "2020-W17",
-		"value" : 700,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 524,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-23",
 		"year_week" : "2020-W17",
-		"value" : 677,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 508,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-24",
 		"year_week" : "2020-W17",
-		"value" : 651,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 495,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-25",
+		"year_week" : "2020-W17",
+		"value" : 460,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-04-26",
+		"year_week" : "2020-W17",
+		"value" : 449,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-27",
 		"year_week" : "2020-W18",
-		"value" : 579,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 439,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-28",
 		"year_week" : "2020-W18",
-		"value" : 561,
-		"source" : "Surveillance",
-		"url" : "https://info.gesundheitsministerium.at/dashboard_Epidem.html?l=de"
+		"value" : 425,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-29",
 		"year_week" : "2020-W18",
-		"value" : 517,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"value" : 386,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-30",
 		"year_week" : "2020-W18",
-		"value" : 500,
-		"source" : "Country_Website"
+		"value" : 372,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-05-01",
+		"year_week" : "2020-W18",
+		"value" : 348,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-02",
 		"year_week" : "2020-W18",
-		"value" : 428,
-		"source" : "Country_Website"
+		"value" : 314,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-03",
 		"year_week" : "2020-W18",
-		"value" : 422,
-		"source" : "Country_Website"
+		"value" : 308,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-04",
 		"year_week" : "2020-W19",
-		"value" : 420,
-		"source" : "Country_Website"
+		"value" : 309,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-05",
 		"year_week" : "2020-W19",
-		"value" : 418,
-		"source" : "Country_Website"
+		"value" : 314,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-06",
 		"year_week" : "2020-W19",
-		"value" : 418,
-		"source" : "Country_Website"
+		"value" : 321,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-07",
 		"year_week" : "2020-W19",
-		"value" : 360,
-		"source" : "Country_Website"
+		"value" : 268,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-08",
 		"year_week" : "2020-W19",
-		"value" : 339,
-		"source" : "Country_Website"
+		"value" : 258,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-09",
 		"year_week" : "2020-W19",
-		"value" : 309,
-		"source" : "Country_Website"
+		"value" : 230,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-10",
 		"year_week" : "2020-W19",
-		"value" : 291,
-		"source" : "Country_Website"
+		"value" : 219,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-11",
 		"year_week" : "2020-W20",
-		"value" : 279,
-		"source" : "Country_Website"
+		"value" : 211,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-12",
 		"year_week" : "2020-W20",
-		"value" : 264,
-		"source" : "Country_Website"
+		"value" : 205,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-13",
 		"year_week" : "2020-W20",
-		"value" : 243,
-		"source" : "Country_Website"
+		"value" : 188,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-14",
 		"year_week" : "2020-W20",
-		"value" : 234,
-		"source" : "Country_Website"
+		"value" : 180,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-15",
 		"year_week" : "2020-W20",
-		"value" : 212,
-		"source" : "Country_Website"
+		"value" : 165,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-16",
 		"year_week" : "2020-W20",
-		"value" : 208,
-		"source" : "Country_Website"
+		"value" : 158,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-17",
 		"year_week" : "2020-W20",
-		"value" : 197,
-		"source" : "Country_Website"
+		"value" : 149,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-18",
 		"year_week" : "2020-W21",
-		"value" : 196,
-		"source" : "Country_Website"
+		"value" : 151,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-05-19",
+		"year_week" : "2020-W21",
+		"value" : 143,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-20",
 		"year_week" : "2020-W21",
-		"value" : 174,
-		"source" : "Country_Website"
+		"value" : 137,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-21",
 		"year_week" : "2020-W21",
-		"value" : 188,
-		"source" : "Country_Website"
+		"value" : 156,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-22",
 		"year_week" : "2020-W21",
-		"value" : 159,
-		"source" : "Country_Website"
+		"value" : 128,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-23",
 		"year_week" : "2020-W21",
-		"value" : 144,
-		"source" : "Country_Website"
+		"value" : 116,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-24",
 		"year_week" : "2020-W21",
-		"value" : 137,
-		"source" : "Country_Website"
+		"value" : 108,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-25",
 		"year_week" : "2020-W22",
-		"value" : 139,
-		"source" : "Country_Website"
+		"value" : 108,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-26",
 		"year_week" : "2020-W22",
-		"value" : 127,
-		"source" : "Country_Website"
+		"value" : 95,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-27",
 		"year_week" : "2020-W22",
-		"value" : 116,
-		"source" : "Country_Website"
+		"value" : 84,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-28",
 		"year_week" : "2020-W22",
-		"value" : 107,
-		"source" : "Country_Website"
+		"value" : 77,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-29",
 		"year_week" : "2020-W22",
-		"value" : 103,
-		"source" : "Country_Website"
+		"value" : 78,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-30",
 		"year_week" : "2020-W22",
-		"value" : 98,
-		"source" : "Country_Website"
+		"value" : 75,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-31",
 		"year_week" : "2020-W22",
-		"value" : 97,
-		"source" : "Country_Website"
+		"value" : 70,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-01",
 		"year_week" : "2020-W23",
-		"value" : 97,
-		"source" : "Country_Website"
+		"value" : 68,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-02",
 		"year_week" : "2020-W23",
-		"value" : 88,
-		"source" : "Country_Website"
+		"value" : 62,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-03",
 		"year_week" : "2020-W23",
-		"value" : 87,
-		"source" : "Country_Website"
+		"value" : 66,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-04",
 		"year_week" : "2020-W23",
-		"value" : 87,
-		"source" : "Country_Website"
+		"value" : 65,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-05",
 		"year_week" : "2020-W23",
-		"value" : 75,
-		"source" : "Country_Website"
+		"value" : 55,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-06",
 		"year_week" : "2020-W23",
-		"value" : 72,
-		"source" : "Country_Website"
+		"value" : 55,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-07",
 		"year_week" : "2020-W23",
-		"value" : 69,
-		"source" : "Country_Website"
+		"value" : 52,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-08",
 		"year_week" : "2020-W24",
-		"value" : 82,
-		"source" : "Country_Website"
+		"value" : 65,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-09",
 		"year_week" : "2020-W24",
-		"value" : 84,
-		"source" : "Country_Website"
+		"value" : 65,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-10",
 		"year_week" : "2020-W24",
-		"value" : 80,
-		"source" : "Country_Website"
+		"value" : 63,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-11",
 		"year_week" : "2020-W24",
-		"value" : 81,
-		"source" : "Country_Website"
+		"value" : 67,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-12",
 		"year_week" : "2020-W24",
-		"value" : 69,
-		"source" : "Country_Website"
+		"value" : 60,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-13",
 		"year_week" : "2020-W24",
-		"value" : 72,
-		"source" : "Country_Website"
+		"value" : 62,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-14",
 		"year_week" : "2020-W24",
-		"value" : 69,
-		"source" : "Country_Website"
+		"value" : 57,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-15",
 		"year_week" : "2020-W25",
-		"value" : 79,
-		"source" : "Country_Website"
+		"value" : 64,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-16",
 		"year_week" : "2020-W25",
-		"value" : 78,
-		"source" : "Country_Website"
+		"value" : 66,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-17",
 		"year_week" : "2020-W25",
-		"value" : 71,
-		"source" : "Country_Website"
+		"value" : 60,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-06-18",
+		"year_week" : "2020-W25",
+		"value" : 64,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-06-19",
+		"year_week" : "2020-W25",
+		"value" : 68,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-06-20",
+		"year_week" : "2020-W25",
+		"value" : 66,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-06-21",
+		"year_week" : "2020-W25",
+		"value" : 61,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-06-22",
+		"year_week" : "2020-W26",
+		"value" : 59,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-23",
 		"year_week" : "2020-W26",
-		"value" : 68,
-		"source" : "Country_Website"
+		"value" : 57,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-24",
 		"year_week" : "2020-W26",
-		"value" : 70,
-		"source" : "Country_Website"
+		"value" : 59,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-25",
 		"year_week" : "2020-W26",
-		"value" : 71,
-		"source" : "Country_Website"
+		"value" : 60,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-26",
 		"year_week" : "2020-W26",
-		"value" : 70,
-		"source" : "Country_Website"
+		"value" : 60,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-27",
 		"year_week" : "2020-W26",
-		"value" : 71,
-		"source" : "Country_Website"
+		"value" : 61,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-28",
 		"year_week" : "2020-W26",
-		"value" : 71,
-		"source" : "Country_Website"
+		"value" : 62,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-29",
 		"year_week" : "2020-W27",
-		"value" : 74,
-		"source" : "Country_Website"
+		"value" : 66,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-06-30",
 		"year_week" : "2020-W27",
-		"value" : 64,
-		"source" : "Country_Website"
+		"value" : 58,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-01",
 		"year_week" : "2020-W27",
-		"value" : 74,
-		"source" : "Country_Website"
+		"value" : 65,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-02",
 		"year_week" : "2020-W27",
-		"value" : 69,
-		"source" : "Country_Website"
+		"value" : 62,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-03",
 		"year_week" : "2020-W27",
-		"value" : 72,
-		"source" : "Country_Website"
+		"value" : 65,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-04",
 		"year_week" : "2020-W27",
-		"value" : 68,
-		"source" : "Country_Website"
+		"value" : 60,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-05",
 		"year_week" : "2020-W27",
-		"value" : 72,
-		"source" : "Country_Website"
+		"value" : 62,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-06",
 		"year_week" : "2020-W28",
-		"value" : 78,
-		"source" : "Country_Website"
+		"value" : 67,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-07",
 		"year_week" : "2020-W28",
-		"value" : 91,
-		"source" : "Country_Website"
+		"value" : 81,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-08",
 		"year_week" : "2020-W28",
-		"value" : 77,
-		"source" : "Country_Website"
+		"value" : 66,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-09",
 		"year_week" : "2020-W28",
-		"value" : 78,
-		"source" : "Country_Website"
+		"value" : 66,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-10",
 		"year_week" : "2020-W28",
-		"value" : 80,
-		"source" : "Country_Website"
+		"value" : 71,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-11",
 		"year_week" : "2020-W28",
-		"value" : 77,
-		"source" : "Country_Website"
+		"value" : 68,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-12",
 		"year_week" : "2020-W28",
-		"value" : 83,
-		"source" : "Country_Website"
+		"value" : 73,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-13",
 		"year_week" : "2020-W29",
-		"value" : 82,
-		"source" : "Country_Website"
+		"value" : 74,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-14",
 		"year_week" : "2020-W29",
-		"value" : 83,
-		"source" : "Country_Website"
+		"value" : 74,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-15",
 		"year_week" : "2020-W29",
-		"value" : 96,
-		"source" : "Country_Website"
+		"value" : 86,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-16",
 		"year_week" : "2020-W29",
-		"value" : 94,
-		"source" : "Country_Website"
+		"value" : 83,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-17",
 		"year_week" : "2020-W29",
-		"value" : 99,
-		"source" : "Country_Website"
+		"value" : 88,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-18",
 		"year_week" : "2020-W29",
-		"value" : 98,
-		"source" : "Country_Website"
+		"value" : 87,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-19",
 		"year_week" : "2020-W29",
-		"value" : 99,
-		"source" : "Country_Website"
+		"value" : 85,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-20",
 		"year_week" : "2020-W30",
-		"value" : 112,
+		"value" : 96,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-07-21",
+		"year_week" : "2020-W30",
+		"value" : 96,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-22",
 		"year_week" : "2020-W30",
-		"value" : 111,
-		"source" : "Country_Website"
+		"value" : 93,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-23",
 		"year_week" : "2020-W30",
-		"value" : 102,
+		"value" : 87,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-24",
 		"year_week" : "2020-W30",
-		"value" : 103,
+		"value" : 86,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-25",
 		"year_week" : "2020-W30",
-		"value" : 101,
+		"value" : 85,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-26",
 		"year_week" : "2020-W30",
-		"value" : 97,
+		"value" : 82,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-27",
 		"year_week" : "2020-W31",
-		"value" : 95,
+		"value" : 79,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-28",
 		"year_week" : "2020-W31",
-		"value" : 89,
+		"value" : 74,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-29",
 		"year_week" : "2020-W31",
-		"value" : 94,
+		"value" : 74,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-30",
 		"year_week" : "2020-W31",
-		"value" : 105,
+		"value" : 87,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-07-31",
 		"year_week" : "2020-W31",
-		"value" : 100,
+		"value" : 84,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-01",
 		"year_week" : "2020-W31",
-		"value" : 89,
+		"value" : 70,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-02",
 		"year_week" : "2020-W31",
-		"value" : 93,
+		"value" : 73,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-03",
 		"year_week" : "2020-W32",
-		"value" : 113,
+		"value" : 92,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-04",
 		"year_week" : "2020-W32",
-		"value" : 107,
+		"value" : 84,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-05",
 		"year_week" : "2020-W32",
-		"value" : 115,
+		"value" : 90,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-06",
 		"year_week" : "2020-W32",
-		"value" : 117,
+		"value" : 92,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-07",
 		"year_week" : "2020-W32",
-		"value" : 118,
+		"value" : 93,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-08",
 		"year_week" : "2020-W32",
-		"value" : 120,
+		"value" : 96,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-09",
 		"year_week" : "2020-W32",
-		"value" : 121,
+		"value" : 99,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-10",
 		"year_week" : "2020-W33",
-		"value" : 116,
+		"value" : 92,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-11",
 		"year_week" : "2020-W33",
-		"value" : 119,
+		"value" : 94,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-12",
 		"year_week" : "2020-W33",
-		"value" : 118,
+		"value" : 93,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-13",
 		"year_week" : "2020-W33",
-		"value" : 114,
+		"value" : 92,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-14",
 		"year_week" : "2020-W33",
-		"value" : 110,
+		"value" : 91,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-15",
 		"year_week" : "2020-W33",
-		"value" : 104,
+		"value" : 83,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-16",
 		"year_week" : "2020-W33",
-		"value" : 84,
+		"value" : 65,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-17",
 		"year_week" : "2020-W34",
-		"value" : 114,
+		"value" : 91,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-18",
 		"year_week" : "2020-W34",
-		"value" : 116,
+		"value" : 97,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-19",
 		"year_week" : "2020-W34",
-		"value" : 121,
+		"value" : 101,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-20",
 		"year_week" : "2020-W34",
-		"value" : 116,
+		"value" : 95,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-21",
 		"year_week" : "2020-W34",
-		"value" : 112,
+		"value" : 90,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-22",
 		"year_week" : "2020-W34",
-		"value" : 116,
+		"value" : 94,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-23",
 		"year_week" : "2020-W34",
-		"value" : 116,
+		"value" : 93,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-24",
 		"year_week" : "2020-W35",
-		"value" : 135,
+		"value" : 112,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-25",
 		"year_week" : "2020-W35",
-		"value" : 137,
+		"value" : 114,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-26",
 		"year_week" : "2020-W35",
-		"value" : 141,
+		"value" : 118,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-27",
 		"year_week" : "2020-W35",
-		"value" : 145,
+		"value" : 121,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-28",
 		"year_week" : "2020-W35",
-		"value" : 146,
+		"value" : 119,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-29",
 		"year_week" : "2020-W35",
-		"value" : 144,
+		"value" : 114,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-30",
 		"year_week" : "2020-W35",
-		"value" : 140,
+		"value" : 110,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-08-31",
 		"year_week" : "2020-W36",
-		"value" : 154,
+		"value" : 123,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-01",
 		"year_week" : "2020-W36",
-		"value" : 149,
+		"value" : 119,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-02",
 		"year_week" : "2020-W36",
-		"value" : 157,
+		"value" : 127,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-03",
 		"year_week" : "2020-W36",
-		"value" : 161,
+		"value" : 132,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-04",
 		"year_week" : "2020-W36",
-		"value" : 156,
+		"value" : 128,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-05",
 		"year_week" : "2020-W36",
-		"value" : 157,
+		"value" : 129,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-06",
 		"year_week" : "2020-W36",
-		"value" : 143,
+		"value" : 115,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-07",
 		"year_week" : "2020-W37",
-		"value" : 163,
+		"value" : 134,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-08",
 		"year_week" : "2020-W37",
-		"value" : 170,
+		"value" : 142,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-09",
 		"year_week" : "2020-W37",
-		"value" : 197,
+		"value" : 161,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-10",
 		"year_week" : "2020-W37",
-		"value" : 205,
+		"value" : 166,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-11",
 		"year_week" : "2020-W37",
-		"value" : 204,
+		"value" : 163,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-12",
 		"year_week" : "2020-W37",
-		"value" : 209,
+		"value" : 167,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-13",
 		"year_week" : "2020-W37",
-		"value" : 226,
+		"value" : 182,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-14",
 		"year_week" : "2020-W38",
-		"value" : 255,
+		"value" : 208,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-15",
 		"year_week" : "2020-W38",
-		"value" : 293,
+		"value" : 244,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-16",
 		"year_week" : "2020-W38",
-		"value" : 321,
+		"value" : 267,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-17",
 		"year_week" : "2020-W38",
-		"value" : 319,
+		"value" : 264,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-18",
 		"year_week" : "2020-W38",
-		"value" : 334,
+		"value" : 272,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-19",
 		"year_week" : "2020-W38",
-		"value" : 349,
+		"value" : 265,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-20",
 		"year_week" : "2020-W38",
-		"value" : 341,
+		"value" : 273,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-21",
 		"year_week" : "2020-W39",
-		"value" : 364,
+		"value" : 297,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-22",
 		"year_week" : "2020-W39",
-		"value" : 390,
+		"value" : 315,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-23",
 		"year_week" : "2020-W39",
-		"value" : 413,
+		"value" : 336,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-24",
 		"year_week" : "2020-W39",
-		"value" : 422,
+		"value" : 344,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-25",
 		"year_week" : "2020-W39",
-		"value" : 411,
+		"value" : 333,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-26",
 		"year_week" : "2020-W39",
-		"value" : 423,
+		"value" : 343,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-27",
 		"year_week" : "2020-W39",
-		"value" : 446,
+		"value" : 362,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-28",
 		"year_week" : "2020-W40",
-		"value" : 469,
+		"value" : 381,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-29",
 		"year_week" : "2020-W40",
-		"value" : 491,
+		"value" : 401,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-30",
 		"year_week" : "2020-W40",
-		"value" : 496,
+		"value" : 406,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-01",
 		"year_week" : "2020-W40",
-		"value" : 493,
+		"value" : 395,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-02",
 		"year_week" : "2020-W40",
-		"value" : 472,
+		"value" : 372,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-03",
 		"year_week" : "2020-W40",
-		"value" : 494,
+		"value" : 397,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-04",
 		"year_week" : "2020-W40",
-		"value" : 476,
+		"value" : 373,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-05",
 		"year_week" : "2020-W41",
-		"value" : 488,
+		"value" : 387,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-06",
 		"year_week" : "2020-W41",
-		"value" : 498,
+		"value" : 397,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-07",
 		"year_week" : "2020-W41",
-		"value" : 525,
+		"value" : 425,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-08",
+		"year_week" : "2020-W41",
+		"value" : 399,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-09",
+		"year_week" : "2020-W41",
+		"value" : 405,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-10",
+		"year_week" : "2020-W41",
+		"value" : 410,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-11",
+		"year_week" : "2020-W41",
+		"value" : 431,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-12",
+		"year_week" : "2020-W42",
+		"value" : 464,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-13",
+		"year_week" : "2020-W42",
+		"value" : 504,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-14",
+		"year_week" : "2020-W42",
+		"value" : 542,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-15",
 		"year_week" : "2020-W42",
-		"value" : 664,
+		"value" : 545,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-16",
 		"year_week" : "2020-W42",
-		"value" : 706,
+		"value" : 584,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-17",
 		"year_week" : "2020-W42",
-		"value" : 724,
+		"value" : 594,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-18",
 		"year_week" : "2020-W42",
-		"value" : 742,
+		"value" : 607,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-19",
 		"year_week" : "2020-W43",
-		"value" : 799,
+		"value" : 654,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-20",
 		"year_week" : "2020-W43",
-		"value" : 889,
+		"value" : 744,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-21",
 		"year_week" : "2020-W43",
-		"value" : 960,
+		"value" : 813,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-22",
 		"year_week" : "2020-W43",
-		"value" : 1002,
+		"value" : 841,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-23",
 		"year_week" : "2020-W43",
-		"value" : 1058,
+		"value" : 900,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-24",
 		"year_week" : "2020-W43",
-		"value" : 1177,
+		"value" : 1002,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
-		"value" : 1225,
+		"value" : 1051,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 1142,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 1197,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 1345,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 1444,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 1540,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 1602,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 1657,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 1825,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 2065,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 2201,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 2330,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 2504,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 2574,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 2533,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-01",
+		"year_week" : "2020-W14",
+		"value" : 215,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-02",
+		"year_week" : "2020-W14",
+		"value" : 219,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-03",
+		"year_week" : "2020-W14",
+		"value" : 245,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-04",
+		"year_week" : "2020-W14",
+		"value" : 245,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-05",
+		"year_week" : "2020-W14",
+		"value" : 244,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-06",
+		"year_week" : "2020-W15",
+		"value" : 250,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-07",
+		"year_week" : "2020-W15",
+		"value" : 243,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-08",
+		"year_week" : "2020-W15",
+		"value" : 267,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-09",
+		"year_week" : "2020-W15",
+		"value" : 266,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-10",
+		"year_week" : "2020-W15",
+		"value" : 261,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-11",
+		"year_week" : "2020-W15",
+		"value" : 245,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-12",
+		"year_week" : "2020-W15",
+		"value" : 243,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-13",
+		"year_week" : "2020-W16",
+		"value" : 239,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-14",
+		"year_week" : "2020-W16",
+		"value" : 243,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-15",
+		"year_week" : "2020-W16",
+		"value" : 232,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-16",
+		"year_week" : "2020-W16",
+		"value" : 238,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-17",
+		"year_week" : "2020-W16",
+		"value" : 227,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-18",
+		"year_week" : "2020-W16",
+		"value" : 208,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-19",
+		"year_week" : "2020-W16",
+		"value" : 204,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-20",
+		"year_week" : "2020-W17",
+		"value" : 194,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1523,8 +2183,8 @@ let euroData = [
 		"date" : "2020-04-21",
 		"year_week" : "2020-W17",
 		"value" : 196,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1532,8 +2192,8 @@ let euroData = [
 		"date" : "2020-04-22",
 		"year_week" : "2020-W17",
 		"value" : 176,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1541,8 +2201,8 @@ let euroData = [
 		"date" : "2020-04-23",
 		"year_week" : "2020-W17",
 		"value" : 169,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1550,8 +2210,26 @@ let euroData = [
 		"date" : "2020-04-24",
 		"year_week" : "2020-W17",
 		"value" : 156,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-25",
+		"year_week" : "2020-W17",
+		"value" : 148,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-26",
+		"year_week" : "2020-W17",
+		"value" : 145,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1559,8 +2237,8 @@ let euroData = [
 		"date" : "2020-04-27",
 		"year_week" : "2020-W18",
 		"value" : 140,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1568,8 +2246,8 @@ let euroData = [
 		"date" : "2020-04-28",
 		"year_week" : "2020-W18",
 		"value" : 136,
-		"source" : "Surveillance",
-		"url" : "https://info.gesundheitsministerium.at/dashboard_Epidem.html?l=de"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1577,8 +2255,8 @@ let euroData = [
 		"date" : "2020-04-29",
 		"year_week" : "2020-W18",
 		"value" : 131,
-		"source" : "Surveillance",
-		"url" : "https://www.sozialministerium.at/Informationen-zum-Coronavirus/Neuartiges-Coronavirus-(2019-nCov).html"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1586,7 +2264,17 @@ let euroData = [
 		"date" : "2020-04-30",
 		"year_week" : "2020-W18",
 		"value" : 128,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-01",
+		"year_week" : "2020-W18",
+		"value" : 124,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1594,7 +2282,8 @@ let euroData = [
 		"date" : "2020-05-02",
 		"year_week" : "2020-W18",
 		"value" : 114,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1602,7 +2291,8 @@ let euroData = [
 		"date" : "2020-05-03",
 		"year_week" : "2020-W18",
 		"value" : 114,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1610,7 +2300,8 @@ let euroData = [
 		"date" : "2020-05-04",
 		"year_week" : "2020-W19",
 		"value" : 111,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1618,7 +2309,8 @@ let euroData = [
 		"date" : "2020-05-05",
 		"year_week" : "2020-W19",
 		"value" : 104,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1626,7 +2318,8 @@ let euroData = [
 		"date" : "2020-05-06",
 		"year_week" : "2020-W19",
 		"value" : 97,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1634,7 +2327,8 @@ let euroData = [
 		"date" : "2020-05-07",
 		"year_week" : "2020-W19",
 		"value" : 92,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1642,7 +2336,8 @@ let euroData = [
 		"date" : "2020-05-08",
 		"year_week" : "2020-W19",
 		"value" : 81,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1650,7 +2345,8 @@ let euroData = [
 		"date" : "2020-05-09",
 		"year_week" : "2020-W19",
 		"value" : 79,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1658,7 +2354,8 @@ let euroData = [
 		"date" : "2020-05-10",
 		"year_week" : "2020-W19",
 		"value" : 72,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1666,7 +2363,8 @@ let euroData = [
 		"date" : "2020-05-11",
 		"year_week" : "2020-W20",
 		"value" : 68,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1674,7 +2372,8 @@ let euroData = [
 		"date" : "2020-05-12",
 		"year_week" : "2020-W20",
 		"value" : 59,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1682,7 +2381,8 @@ let euroData = [
 		"date" : "2020-05-13",
 		"year_week" : "2020-W20",
 		"value" : 55,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1690,7 +2390,8 @@ let euroData = [
 		"date" : "2020-05-14",
 		"year_week" : "2020-W20",
 		"value" : 54,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1698,7 +2399,8 @@ let euroData = [
 		"date" : "2020-05-15",
 		"year_week" : "2020-W20",
 		"value" : 47,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1706,7 +2408,8 @@ let euroData = [
 		"date" : "2020-05-16",
 		"year_week" : "2020-W20",
 		"value" : 50,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1714,7 +2417,8 @@ let euroData = [
 		"date" : "2020-05-17",
 		"year_week" : "2020-W20",
 		"value" : 48,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1722,7 +2426,17 @@ let euroData = [
 		"date" : "2020-05-18",
 		"year_week" : "2020-W21",
 		"value" : 45,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-19",
+		"year_week" : "2020-W21",
+		"value" : 39,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1730,7 +2444,8 @@ let euroData = [
 		"date" : "2020-05-20",
 		"year_week" : "2020-W21",
 		"value" : 37,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1738,7 +2453,8 @@ let euroData = [
 		"date" : "2020-05-21",
 		"year_week" : "2020-W21",
 		"value" : 32,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1746,7 +2462,8 @@ let euroData = [
 		"date" : "2020-05-22",
 		"year_week" : "2020-W21",
 		"value" : 31,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1754,7 +2471,8 @@ let euroData = [
 		"date" : "2020-05-23",
 		"year_week" : "2020-W21",
 		"value" : 28,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1762,7 +2480,8 @@ let euroData = [
 		"date" : "2020-05-24",
 		"year_week" : "2020-W21",
 		"value" : 29,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1770,7 +2489,8 @@ let euroData = [
 		"date" : "2020-05-25",
 		"year_week" : "2020-W22",
 		"value" : 31,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1778,7 +2498,8 @@ let euroData = [
 		"date" : "2020-05-26",
 		"year_week" : "2020-W22",
 		"value" : 32,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1786,7 +2507,8 @@ let euroData = [
 		"date" : "2020-05-27",
 		"year_week" : "2020-W22",
 		"value" : 32,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1794,7 +2516,8 @@ let euroData = [
 		"date" : "2020-05-28",
 		"year_week" : "2020-W22",
 		"value" : 30,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1802,7 +2525,8 @@ let euroData = [
 		"date" : "2020-05-29",
 		"year_week" : "2020-W22",
 		"value" : 25,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1810,7 +2534,8 @@ let euroData = [
 		"date" : "2020-05-30",
 		"year_week" : "2020-W22",
 		"value" : 23,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1818,7 +2543,8 @@ let euroData = [
 		"date" : "2020-05-31",
 		"year_week" : "2020-W22",
 		"value" : 27,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1826,7 +2552,8 @@ let euroData = [
 		"date" : "2020-06-01",
 		"year_week" : "2020-W23",
 		"value" : 29,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1834,7 +2561,8 @@ let euroData = [
 		"date" : "2020-06-02",
 		"year_week" : "2020-W23",
 		"value" : 26,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1842,7 +2570,8 @@ let euroData = [
 		"date" : "2020-06-03",
 		"year_week" : "2020-W23",
 		"value" : 21,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1850,7 +2579,8 @@ let euroData = [
 		"date" : "2020-06-04",
 		"year_week" : "2020-W23",
 		"value" : 22,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1858,7 +2588,8 @@ let euroData = [
 		"date" : "2020-06-05",
 		"year_week" : "2020-W23",
 		"value" : 20,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1866,7 +2597,8 @@ let euroData = [
 		"date" : "2020-06-06",
 		"year_week" : "2020-W23",
 		"value" : 17,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1874,7 +2606,8 @@ let euroData = [
 		"date" : "2020-06-07",
 		"year_week" : "2020-W23",
 		"value" : 17,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1882,7 +2615,8 @@ let euroData = [
 		"date" : "2020-06-08",
 		"year_week" : "2020-W24",
 		"value" : 17,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1890,7 +2624,8 @@ let euroData = [
 		"date" : "2020-06-09",
 		"year_week" : "2020-W24",
 		"value" : 19,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1898,7 +2633,8 @@ let euroData = [
 		"date" : "2020-06-10",
 		"year_week" : "2020-W24",
 		"value" : 17,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1906,7 +2642,8 @@ let euroData = [
 		"date" : "2020-06-11",
 		"year_week" : "2020-W24",
 		"value" : 14,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1914,7 +2651,8 @@ let euroData = [
 		"date" : "2020-06-12",
 		"year_week" : "2020-W24",
 		"value" : 9,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1922,7 +2660,8 @@ let euroData = [
 		"date" : "2020-06-13",
 		"year_week" : "2020-W24",
 		"value" : 10,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1930,7 +2669,8 @@ let euroData = [
 		"date" : "2020-06-14",
 		"year_week" : "2020-W24",
 		"value" : 12,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1938,7 +2678,8 @@ let euroData = [
 		"date" : "2020-06-15",
 		"year_week" : "2020-W25",
 		"value" : 15,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1946,7 +2687,8 @@ let euroData = [
 		"date" : "2020-06-16",
 		"year_week" : "2020-W25",
 		"value" : 12,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1954,7 +2696,53 @@ let euroData = [
 		"date" : "2020-06-17",
 		"year_week" : "2020-W25",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-18",
+		"year_week" : "2020-W25",
+		"value" : 8,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-19",
+		"year_week" : "2020-W25",
+		"value" : 7,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-20",
+		"year_week" : "2020-W25",
+		"value" : 8,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-21",
+		"year_week" : "2020-W25",
+		"value" : 8,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-22",
+		"year_week" : "2020-W26",
+		"value" : 10,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1962,7 +2750,8 @@ let euroData = [
 		"date" : "2020-06-23",
 		"year_week" : "2020-W26",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1970,7 +2759,8 @@ let euroData = [
 		"date" : "2020-06-24",
 		"year_week" : "2020-W26",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1978,7 +2768,8 @@ let euroData = [
 		"date" : "2020-06-25",
 		"year_week" : "2020-W26",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1986,7 +2777,8 @@ let euroData = [
 		"date" : "2020-06-26",
 		"year_week" : "2020-W26",
 		"value" : 10,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -1994,7 +2786,8 @@ let euroData = [
 		"date" : "2020-06-27",
 		"year_week" : "2020-W26",
 		"value" : 10,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2002,7 +2795,8 @@ let euroData = [
 		"date" : "2020-06-28",
 		"year_week" : "2020-W26",
 		"value" : 9,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2010,7 +2804,8 @@ let euroData = [
 		"date" : "2020-06-29",
 		"year_week" : "2020-W27",
 		"value" : 8,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2018,7 +2813,8 @@ let euroData = [
 		"date" : "2020-06-30",
 		"year_week" : "2020-W27",
 		"value" : 6,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2026,7 +2822,8 @@ let euroData = [
 		"date" : "2020-07-01",
 		"year_week" : "2020-W27",
 		"value" : 9,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2034,7 +2831,8 @@ let euroData = [
 		"date" : "2020-07-02",
 		"year_week" : "2020-W27",
 		"value" : 7,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2042,7 +2840,8 @@ let euroData = [
 		"date" : "2020-07-03",
 		"year_week" : "2020-W27",
 		"value" : 7,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2050,7 +2849,8 @@ let euroData = [
 		"date" : "2020-07-04",
 		"year_week" : "2020-W27",
 		"value" : 8,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2058,7 +2858,8 @@ let euroData = [
 		"date" : "2020-07-05",
 		"year_week" : "2020-W27",
 		"value" : 10,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2066,7 +2867,8 @@ let euroData = [
 		"date" : "2020-07-06",
 		"year_week" : "2020-W28",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2074,7 +2876,8 @@ let euroData = [
 		"date" : "2020-07-07",
 		"year_week" : "2020-W28",
 		"value" : 10,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2082,7 +2885,8 @@ let euroData = [
 		"date" : "2020-07-08",
 		"year_week" : "2020-W28",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2090,7 +2894,8 @@ let euroData = [
 		"date" : "2020-07-09",
 		"year_week" : "2020-W28",
 		"value" : 12,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2098,7 +2903,8 @@ let euroData = [
 		"date" : "2020-07-10",
 		"year_week" : "2020-W28",
 		"value" : 9,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2106,7 +2912,8 @@ let euroData = [
 		"date" : "2020-07-11",
 		"year_week" : "2020-W28",
 		"value" : 9,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2114,7 +2921,8 @@ let euroData = [
 		"date" : "2020-07-12",
 		"year_week" : "2020-W28",
 		"value" : 10,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2122,7 +2930,8 @@ let euroData = [
 		"date" : "2020-07-13",
 		"year_week" : "2020-W29",
 		"value" : 8,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2130,7 +2939,8 @@ let euroData = [
 		"date" : "2020-07-14",
 		"year_week" : "2020-W29",
 		"value" : 9,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2138,7 +2948,8 @@ let euroData = [
 		"date" : "2020-07-15",
 		"year_week" : "2020-W29",
 		"value" : 10,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2146,7 +2957,8 @@ let euroData = [
 		"date" : "2020-07-16",
 		"year_week" : "2020-W29",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2154,7 +2966,8 @@ let euroData = [
 		"date" : "2020-07-17",
 		"year_week" : "2020-W29",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2162,7 +2975,8 @@ let euroData = [
 		"date" : "2020-07-18",
 		"year_week" : "2020-W29",
 		"value" : 11,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2170,7 +2984,8 @@ let euroData = [
 		"date" : "2020-07-19",
 		"year_week" : "2020-W29",
 		"value" : 14,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2179,7 +2994,16 @@ let euroData = [
 		"year_week" : "2020-W30",
 		"value" : 16,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-21",
+		"year_week" : "2020-W30",
+		"value" : 18,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2187,7 +3011,8 @@ let euroData = [
 		"date" : "2020-07-22",
 		"year_week" : "2020-W30",
 		"value" : 18,
-		"source" : "Country_Website"
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2196,7 +3021,7 @@ let euroData = [
 		"year_week" : "2020-W30",
 		"value" : 15,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2205,7 +3030,7 @@ let euroData = [
 		"year_week" : "2020-W30",
 		"value" : 17,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2214,7 +3039,7 @@ let euroData = [
 		"year_week" : "2020-W30",
 		"value" : 16,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2223,7 +3048,7 @@ let euroData = [
 		"year_week" : "2020-W30",
 		"value" : 15,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2232,7 +3057,7 @@ let euroData = [
 		"year_week" : "2020-W31",
 		"value" : 16,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2241,7 +3066,7 @@ let euroData = [
 		"year_week" : "2020-W31",
 		"value" : 15,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2250,7 +3075,7 @@ let euroData = [
 		"year_week" : "2020-W31",
 		"value" : 20,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2259,7 +3084,7 @@ let euroData = [
 		"year_week" : "2020-W31",
 		"value" : 18,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2268,7 +3093,7 @@ let euroData = [
 		"year_week" : "2020-W31",
 		"value" : 16,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2277,7 +3102,7 @@ let euroData = [
 		"year_week" : "2020-W31",
 		"value" : 19,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2286,7 +3111,7 @@ let euroData = [
 		"year_week" : "2020-W31",
 		"value" : 20,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2295,7 +3120,7 @@ let euroData = [
 		"year_week" : "2020-W32",
 		"value" : 21,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2304,7 +3129,7 @@ let euroData = [
 		"year_week" : "2020-W32",
 		"value" : 23,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2313,7 +3138,7 @@ let euroData = [
 		"year_week" : "2020-W32",
 		"value" : 25,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2322,7 +3147,7 @@ let euroData = [
 		"year_week" : "2020-W32",
 		"value" : 25,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2331,7 +3156,7 @@ let euroData = [
 		"year_week" : "2020-W32",
 		"value" : 25,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2340,7 +3165,7 @@ let euroData = [
 		"year_week" : "2020-W32",
 		"value" : 24,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2349,7 +3174,7 @@ let euroData = [
 		"year_week" : "2020-W32",
 		"value" : 22,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2358,7 +3183,7 @@ let euroData = [
 		"year_week" : "2020-W33",
 		"value" : 24,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2367,7 +3192,7 @@ let euroData = [
 		"year_week" : "2020-W33",
 		"value" : 25,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2376,7 +3201,7 @@ let euroData = [
 		"year_week" : "2020-W33",
 		"value" : 25,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2385,7 +3210,7 @@ let euroData = [
 		"year_week" : "2020-W33",
 		"value" : 22,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2394,7 +3219,7 @@ let euroData = [
 		"year_week" : "2020-W33",
 		"value" : 19,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2403,7 +3228,7 @@ let euroData = [
 		"year_week" : "2020-W33",
 		"value" : 21,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2412,7 +3237,7 @@ let euroData = [
 		"year_week" : "2020-W33",
 		"value" : 19,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2421,7 +3246,7 @@ let euroData = [
 		"year_week" : "2020-W34",
 		"value" : 23,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2430,7 +3255,7 @@ let euroData = [
 		"year_week" : "2020-W34",
 		"value" : 19,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2439,7 +3264,7 @@ let euroData = [
 		"year_week" : "2020-W34",
 		"value" : 20,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2448,7 +3273,7 @@ let euroData = [
 		"year_week" : "2020-W34",
 		"value" : 21,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2457,7 +3282,7 @@ let euroData = [
 		"year_week" : "2020-W34",
 		"value" : 22,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2466,7 +3291,7 @@ let euroData = [
 		"year_week" : "2020-W34",
 		"value" : 22,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2475,7 +3300,7 @@ let euroData = [
 		"year_week" : "2020-W34",
 		"value" : 23,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2484,7 +3309,7 @@ let euroData = [
 		"year_week" : "2020-W35",
 		"value" : 23,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2493,7 +3318,7 @@ let euroData = [
 		"year_week" : "2020-W35",
 		"value" : 23,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2502,7 +3327,7 @@ let euroData = [
 		"year_week" : "2020-W35",
 		"value" : 23,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2511,7 +3336,7 @@ let euroData = [
 		"year_week" : "2020-W35",
 		"value" : 24,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2520,7 +3345,7 @@ let euroData = [
 		"year_week" : "2020-W35",
 		"value" : 27,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2529,7 +3354,7 @@ let euroData = [
 		"year_week" : "2020-W35",
 		"value" : 30,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2538,7 +3363,7 @@ let euroData = [
 		"year_week" : "2020-W35",
 		"value" : 30,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2547,7 +3372,7 @@ let euroData = [
 		"year_week" : "2020-W36",
 		"value" : 31,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2556,7 +3381,7 @@ let euroData = [
 		"year_week" : "2020-W36",
 		"value" : 30,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2565,7 +3390,7 @@ let euroData = [
 		"year_week" : "2020-W36",
 		"value" : 30,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2574,7 +3399,7 @@ let euroData = [
 		"year_week" : "2020-W36",
 		"value" : 29,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2583,7 +3408,7 @@ let euroData = [
 		"year_week" : "2020-W36",
 		"value" : 28,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2592,7 +3417,7 @@ let euroData = [
 		"year_week" : "2020-W36",
 		"value" : 28,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2601,7 +3426,7 @@ let euroData = [
 		"year_week" : "2020-W36",
 		"value" : 28,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2610,7 +3435,7 @@ let euroData = [
 		"year_week" : "2020-W37",
 		"value" : 29,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2619,7 +3444,7 @@ let euroData = [
 		"year_week" : "2020-W37",
 		"value" : 28,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2628,7 +3453,7 @@ let euroData = [
 		"year_week" : "2020-W37",
 		"value" : 36,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2637,7 +3462,7 @@ let euroData = [
 		"year_week" : "2020-W37",
 		"value" : 39,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2646,7 +3471,7 @@ let euroData = [
 		"year_week" : "2020-W37",
 		"value" : 41,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2655,7 +3480,7 @@ let euroData = [
 		"year_week" : "2020-W37",
 		"value" : 42,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2664,7 +3489,7 @@ let euroData = [
 		"year_week" : "2020-W37",
 		"value" : 44,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2673,7 +3498,7 @@ let euroData = [
 		"year_week" : "2020-W38",
 		"value" : 47,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2682,7 +3507,7 @@ let euroData = [
 		"year_week" : "2020-W38",
 		"value" : 49,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2691,7 +3516,7 @@ let euroData = [
 		"year_week" : "2020-W38",
 		"value" : 54,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2700,7 +3525,7 @@ let euroData = [
 		"year_week" : "2020-W38",
 		"value" : 55,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2709,7 +3534,7 @@ let euroData = [
 		"year_week" : "2020-W38",
 		"value" : 62,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2718,7 +3543,7 @@ let euroData = [
 		"year_week" : "2020-W38",
 		"value" : 84,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2727,7 +3552,7 @@ let euroData = [
 		"year_week" : "2020-W38",
 		"value" : 68,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2736,7 +3561,7 @@ let euroData = [
 		"year_week" : "2020-W39",
 		"value" : 67,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2745,7 +3570,7 @@ let euroData = [
 		"year_week" : "2020-W39",
 		"value" : 75,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2754,7 +3579,7 @@ let euroData = [
 		"year_week" : "2020-W39",
 		"value" : 77,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2763,7 +3588,7 @@ let euroData = [
 		"year_week" : "2020-W39",
 		"value" : 78,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2772,7 +3597,7 @@ let euroData = [
 		"year_week" : "2020-W39",
 		"value" : 78,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2781,7 +3606,7 @@ let euroData = [
 		"year_week" : "2020-W39",
 		"value" : 80,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2790,7 +3615,7 @@ let euroData = [
 		"year_week" : "2020-W39",
 		"value" : 84,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2799,7 +3624,7 @@ let euroData = [
 		"year_week" : "2020-W40",
 		"value" : 88,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2808,7 +3633,7 @@ let euroData = [
 		"year_week" : "2020-W40",
 		"value" : 90,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2817,7 +3642,7 @@ let euroData = [
 		"year_week" : "2020-W40",
 		"value" : 90,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2826,7 +3651,7 @@ let euroData = [
 		"year_week" : "2020-W40",
 		"value" : 98,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2835,7 +3660,7 @@ let euroData = [
 		"year_week" : "2020-W40",
 		"value" : 100,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2844,7 +3669,7 @@ let euroData = [
 		"year_week" : "2020-W40",
 		"value" : 97,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2853,7 +3678,7 @@ let euroData = [
 		"year_week" : "2020-W40",
 		"value" : 103,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2862,7 +3687,7 @@ let euroData = [
 		"year_week" : "2020-W41",
 		"value" : 101,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2871,7 +3696,7 @@ let euroData = [
 		"year_week" : "2020-W41",
 		"value" : 101,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2880,7 +3705,70 @@ let euroData = [
 		"year_week" : "2020-W41",
 		"value" : 100,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-08",
+		"year_week" : "2020-W41",
+		"value" : 107,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-09",
+		"year_week" : "2020-W41",
+		"value" : 103,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-10",
+		"year_week" : "2020-W41",
+		"value" : 99,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-11",
+		"year_week" : "2020-W41",
+		"value" : 96,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-12",
+		"year_week" : "2020-W42",
+		"value" : 97,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-13",
+		"year_week" : "2020-W42",
+		"value" : 107,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-14",
+		"year_week" : "2020-W42",
+		"value" : 112,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2889,7 +3777,7 @@ let euroData = [
 		"year_week" : "2020-W42",
 		"value" : 119,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2898,7 +3786,7 @@ let euroData = [
 		"year_week" : "2020-W42",
 		"value" : 122,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2907,7 +3795,7 @@ let euroData = [
 		"year_week" : "2020-W42",
 		"value" : 130,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2916,7 +3804,7 @@ let euroData = [
 		"year_week" : "2020-W42",
 		"value" : 135,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2925,7 +3813,7 @@ let euroData = [
 		"year_week" : "2020-W43",
 		"value" : 145,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2934,7 +3822,7 @@ let euroData = [
 		"year_week" : "2020-W43",
 		"value" : 145,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2943,7 +3831,7 @@ let euroData = [
 		"year_week" : "2020-W43",
 		"value" : 147,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2952,7 +3840,7 @@ let euroData = [
 		"year_week" : "2020-W43",
 		"value" : 161,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2961,7 +3849,7 @@ let euroData = [
 		"year_week" : "2020-W43",
 		"value" : 158,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2970,7 +3858,7 @@ let euroData = [
 		"year_week" : "2020-W43",
 		"value" : 175,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Austria",
@@ -2979,7 +3867,133 @@ let euroData = [
 		"year_week" : "2020-W43",
 		"value" : 174,
 		"source" : "Country_Website",
-		"url" : "https://info.gesundheitsministerium.at"
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 188,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 203,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 224,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 248,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 263,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 265,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 291,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 336,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 366,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 383,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 407,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 431,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 432,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
+	},
+	{
+		"country" : "Austria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 459,
+		"source" : "Country_Website",
+		"url" : "https://covid19-dashboard.ages.at/dashboard_Hosp.html"
 	},
 	{
 		"country" : "Belgium",
@@ -5003,6 +6017,132 @@ let euroData = [
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
 		"value" : 4825,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 5260,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 5549,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 5924,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 6187,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 6439,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 6502,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 6824,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 7232,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 7489,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 7407,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 7290,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 7224,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 6892,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 6955,
 		"source" : "Country_Website",
 		"url" : "https://epistat.wiv-isp.be/covid/"
 	},
@@ -7033,6 +8173,132 @@ let euroData = [
 	},
 	{
 		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 809,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 912,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 994,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 1057,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 1105,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 1161,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 1223,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 1302,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 1353,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 1412,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 1428,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 1459,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 1464,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 1470,
+		"source" : "Country_Website",
+		"url" : "https://epistat.wiv-isp.be/covid/"
+	},
+	{
+		"country" : "Belgium",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W06",
 		"source" : "TESSy COVID-19, national weekly data"
@@ -7289,7 +8555,21 @@ let euroData = [
 		"country" : "Belgium",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 28.3793340135877,
+		"value" : 28.7110518519501,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 40.0854819410627,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Belgium",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 36.5064210534678,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
@@ -9121,6 +10401,132 @@ let euroData = [
 	},
 	{
 		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 2036,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 2130,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 2217,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 2316,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 2376,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 2447,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 2612,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 2680,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 2841,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 2922,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 3191,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 3424,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 3563,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 3715,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-06",
 		"year_week" : "2020-W15",
@@ -10947,6 +12353,132 @@ let euroData = [
 		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
 	},
 	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 146,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 149,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 145,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 162,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 167,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 165,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 166,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 169,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 180,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 210,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 239,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 250,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 257,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
+		"country" : "Bulgaria",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 271,
+		"source" : "External_Github",
+		"url" : "https://github.com/COVID-19-Bulgaria/covid-database"
+	},
+	{
 		"country" : "Croatia",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-15",
@@ -12676,6 +14208,132 @@ let euroData = [
 	},
 	{
 		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-24",
+		"year_week" : "2020-W43",
+		"value" : 731,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-25",
+		"year_week" : "2020-W43",
+		"value" : 825,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 864,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 897,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 932,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 985,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 1027,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 1049,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 1097,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 1127,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 1192,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 1221,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 1278,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 1307,
+		"source" : "Country_Website",
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
+	},
+	{
+		"country" : "Croatia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W16",
 		"value" : 1.76633108011636,
@@ -12864,305 +14522,485 @@ let euroData = [
 		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
 	},
 	{
-		"country" : "Cyprus",
+		"country" : "Croatia",
 		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W05",
-		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"year_week" : "2020-W43",
+		"value" : 20.1410807885491,
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
 	},
 	{
-		"country" : "Cyprus",
+		"country" : "Croatia",
 		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W10",
-		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"year_week" : "2020-W44",
+		"value" : 26.5930957061963,
+		"url" : "https://www.hzjz.hr/aktualnosti/covid-19-izvjesce-hzjz-a/"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W11",
 		"value" : 1.02751572955329,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W12",
 		"value" : 2.74004194547545,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W13",
 		"value" : 6.05092596292495,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W14",
 		"value" : 4.11006291821317,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W15",
 		"value" : 2.28336828789621,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W16",
 		"value" : 1.37002097273772,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W17",
 		"value" : 0.799178900763673,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W18",
 		"value" : 0.570842071974052,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W19",
 		"value" : 0.456673657579241,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W20",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W21",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W22",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W23",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W24",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W25",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W26",
 		"value" : 0.228336828789621,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W27",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W28",
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W29",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W30",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W31",
 		"value" : 0.913347315158483,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W32",
 		"value" : 0.456673657579241,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W33",
 		"value" : 0.228336828789621,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
 		"value" : 0.456673657579241,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W35",
 		"value" : 0.570842071974052,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
 		"value" : 0.570842071974052,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
 		"value" : 1.37002097273772,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
 		"value" : 0.456673657579241,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
 		"value" : 0.456673657579241,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 2.39753670229102,
-		"source" : "TESSy COVID-19, national daily data"
+		"value" : 2.74004194547545,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W43",
+		"value" : 1.82669463031697,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 2.85421035987026,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 5.59425230534571,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W11",
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W12",
 		"value" : 0.342505243184431,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W13",
 		"value" : 1.94086304471178,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W14",
 		"value" : 1.02751572955329,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W15",
 		"value" : 0.799178900763673,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W16",
 		"value" : 0.456673657579241,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W17",
 		"value" : 0.228336828789621,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W18",
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W19",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W20",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W21",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W22",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W23",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W24",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W25",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W26",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W27",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W28",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W29",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W30",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W31",
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W32",
 		"value" : 0.11416841439481,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W33",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W34",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W35",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W36",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W37",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W38",
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W39",
 		"value" : 0.342505243184431,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W40",
 		"value" : 0.342505243184431,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W41",
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Cyprus",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W42",
 		"value" : 0.342505243184431,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W43",
+		"value" : 0.11416841439481,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 0.11416841439481,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Cyprus",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 0.11416841439481,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
@@ -15231,6 +17069,132 @@ let euroData = [
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
 		"value" : 5613,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 6191,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 6624,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 6604,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 7281,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 7673,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 7370,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 7486,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 7396,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 8278,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 8236,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 8276,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 8283,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 7779,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 7787,
 		"source" : "Country_Website",
 		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
 	},
@@ -17306,549 +19270,643 @@ let euroData = [
 	},
 	{
 		"country" : "Czechia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W05",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 893,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
 	},
 	{
 		"country" : "Czechia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W06",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 962,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
 	},
 	{
 		"country" : "Czechia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W07",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 1031,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
 	},
 	{
 		"country" : "Czechia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W08",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 1068,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 1137,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 1156,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 1163,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 1134,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 1244,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 1196,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 1180,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 1206,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 1196,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 1199,
+		"source" : "Country_Website",
+		"url" : "https://onemocneni-aktualne.mzcr.cz/covid-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W09",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W10",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.272305583203441,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W11",
 		"value" : 0.103288324663374,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W12",
-		"value" : 1.14556141899378,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.16434111438713,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W13",
-		"value" : 3.35217562771132,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 3.28644669383463,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W14",
-		"value" : 4.96722943153862,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 4.85455125917858,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W15",
-		"value" : 5.49306090255216,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 5.43672181637214,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W16",
-		"value" : 4.96722943153862,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 4.82638171608857,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W17",
-		"value" : 4.62919491445849,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 4.48834719900843,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W18",
-		"value" : 3.60570151552142,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 3.49302334316137,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W19",
-		"value" : 2.70427613664106,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 2.66671674585438,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W20",
-		"value" : 1.83102030085072,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.82163045315405,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W21",
-		"value" : 1.40847715450055,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.37091776371387,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W22",
-		"value" : 1.18312080978047,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.12678172360044,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W23",
 		"value" : 0.938984769667036,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W24",
 		"value" : 0.854476140397003,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W25",
 		"value" : 1.07044263742042,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W26",
-		"value" : 0.995323855847058,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.00471370354373,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W27",
-		"value" : 1.0141035512404,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.995323855847058,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W28",
-		"value" : 1.04227309433041,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.00471370354373,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W29",
-		"value" : 1.04227309433041,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.02349339893707,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W30",
-		"value" : 1.28640913444384,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.23007004826382,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W31",
-		"value" : 1.63383349922064,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.59627410843396,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W32",
-		"value" : 1.70895228079401,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.65261319461398,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W33",
-		"value" : 1.82163045315405,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.78407106236737,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
-		"value" : 1.92491877781742,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.90613908242408,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W35",
-		"value" : 2.25356344720089,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 2.16905481793085,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
-		"value" : 3.09864973990122,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 3.0423106537212,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 4.76065278221187,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 4.66675430524517,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 8.10343856222652,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 7.92503145598978,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 12.9579898214051,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 12.732633476685,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 19.0707806719375,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 18.4416608762606,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 32.5546019643561,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 31.5498882608124,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 53.6348100433811,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 52.4047399951173,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 81.9545906965389,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 83.7292719112096,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W05",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 109.692200792503,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W06",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
-	},
-	{
-		"country" : "Czechia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W07",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
-	},
-	{
-		"country" : "Czechia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W08",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 118.58438656125,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W09",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W10",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W11",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W12",
-		"value" : 0.187796953933407,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.272305583203441,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W13",
-		"value" : 0.704238577250277,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.835696445003662,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W14",
-		"value" : 1.21129035287048,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.20190050517381,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W15",
-		"value" : 1.49298578377059,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.37091776371387,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W16",
-		"value" : 1.33335837292719,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.22068020056715,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W17",
-		"value" : 1.20190050517381,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.1080020282071,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W18",
-		"value" : 0.845086292700332,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.732408120340288,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W19",
-		"value" : 0.657289338766925,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.572780709496892,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W20",
-		"value" : 0.51644162331687,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.441322841743507,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W21",
-		"value" : 0.384983755563485,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.300475126293452,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W22",
-		"value" : 0.2535258878101,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.197186801630078,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W23",
-		"value" : 0.187796953933407,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.159627410843396,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W24",
-		"value" : 0.169017258540067,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.150237563146726,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W25",
-		"value" : 0.159627410843396,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.131457867753385,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W26",
-		"value" : 0.215966497023418,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.150237563146726,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W27",
-		"value" : 0.244136040113429,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.169017258540067,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W28",
-		"value" : 0.206576649326748,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.215966497023418,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W29",
-		"value" : 0.244136040113429,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.169017258540067,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W30",
-		"value" : 0.26291573550677,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.169017258540067,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W31",
-		"value" : 0.281695430900111,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.206576649326748,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W32",
-		"value" : 0.300475126293452,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.272305583203441,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W33",
-		"value" : 0.347424364776803,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.300475126293452,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W34",
-		"value" : 0.422543146350166,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.384983755563485,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W35",
-		"value" : 0.535221318710211,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.52583147101354,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W36",
-		"value" : 0.741797968036958,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.704238577250277,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 1.1080020282071,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.938984769667036,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 1.71834212849068,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.66200304231065,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 3.00475126293452,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 2.71366598433773,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 4.5634659805818,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 3.98129542338823,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 7.75601419744972,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 6.51655430148923,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 10.7325959172942,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 9.08937257037691,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Czechia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 14.9298578377059,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 13.1739563184285,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 16.7608781385566,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Czechia",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 19.2210182350842,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Denmark",
@@ -19729,6 +21787,132 @@ let euroData = [
 	},
 	{
 		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 145,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 137,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 136,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 139,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 144,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 147,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 156,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 174,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 169,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 184,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 182,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 191,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 187,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 188,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-16",
 		"year_week" : "2020-W12",
@@ -21598,6 +23782,132 @@ let euroData = [
 	},
 	{
 		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 17,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 19,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 18,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 17,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 17,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 19,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 19,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 23,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 22,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 24,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 24,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 23,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 29,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 30,
+		"source" : "Country_Website",
+		"url" : "https://www.sst.dk/da/corona/tal-og-overvaagning"
+	},
+	{
+		"country" : "Denmark",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W09",
 		"value" : 0.0172233215485626,
@@ -21628,7 +23938,7 @@ let euroData = [
 		"country" : "Denmark",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W13",
-		"value" : 9.66228338874363,
+		"value" : 9.6278367456465,
 		"url" : "https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning"
 	},
 	{
@@ -21839,6 +24149,20 @@ let euroData = [
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
 		"value" : 2.79017809086715,
+		"url" : "https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 4.15082049320359,
+		"url" : "https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning"
+	},
+	{
+		"country" : "Denmark",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 4.82253003359753,
 		"url" : "https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning"
 	},
 	{
@@ -23925,7 +26249,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-14",
 		"year_week" : "2020-W42",
-		"value" : 35,
+		"value" : 36,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -23934,7 +26258,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-15",
 		"year_week" : "2020-W42",
-		"value" : 36,
+		"value" : 37,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -23943,7 +26267,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-16",
 		"year_week" : "2020-W42",
-		"value" : 32,
+		"value" : 33,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -23952,7 +26276,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-17",
 		"year_week" : "2020-W42",
-		"value" : 32,
+		"value" : 33,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -23961,7 +26285,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-18",
 		"year_week" : "2020-W42",
-		"value" : 35,
+		"value" : 36,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -23970,7 +26294,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-19",
 		"year_week" : "2020-W43",
-		"value" : 29,
+		"value" : 30,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -23979,7 +26303,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-20",
 		"year_week" : "2020-W43",
-		"value" : 28,
+		"value" : 29,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -23988,7 +26312,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-21",
 		"year_week" : "2020-W43",
-		"value" : 32,
+		"value" : 33,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -23997,7 +26321,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-22",
 		"year_week" : "2020-W43",
-		"value" : 28,
+		"value" : 29,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -24006,7 +26330,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-23",
 		"year_week" : "2020-W43",
-		"value" : 27,
+		"value" : 28,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -24015,7 +26339,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-24",
 		"year_week" : "2020-W43",
-		"value" : 28,
+		"value" : 29,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -24024,7 +26348,133 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
-		"value" : 29,
+		"value" : 30,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 36,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 33,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 34,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 39,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 41,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 42,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 46,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 44,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 44,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 53,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 53,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 48,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 57,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 61,
 		"source" : "Country_API",
 		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
 	},
@@ -26217,227 +28667,386 @@ let euroData = [
 	},
 	{
 		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 4,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 6,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 6,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 6,
+		"source" : "Country_API",
+		"url" : "https://www.terviseamet.ee/et/koroonaviirus/avaandmed"
+	},
+	{
+		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W09",
 		"value" : 0.0754819522652134,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W10",
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W11",
 		"value" : 0.301927809060854,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W12",
 		"value" : 2.49090442475204,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W13",
 		"value" : 5.43470056309536,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W14",
 		"value" : 7.69915913105177,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W15",
 		"value" : 4.83084494497366,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W16",
 		"value" : 3.24572394740418,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W17",
 		"value" : 1.6606029498347,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W18",
 		"value" : 1.81156685436512,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W19",
 		"value" : 0.45289171359128,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W20",
 		"value" : 0.754819522652134,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W21",
 		"value" : 1.81156685436512,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W22",
 		"value" : 0.603855618121707,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W23",
 		"value" : 0.301927809060854,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W24",
 		"value" : 0.603855618121707,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W25",
 		"value" : 0.377409761326067,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W26",
 		"value" : 0.150963904530427,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W27",
 		"value" : 0.0754819522652134,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W28",
 		"value" : 0.0754819522652134,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W29",
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W30",
 		"value" : 0.0754819522652134,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W31",
 		"value" : 0.150963904530427,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W32",
 		"value" : 0.301927809060854,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W33",
 		"value" : 0.150963904530427,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
 		"value" : 0.528373665856494,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W35",
-		"value" : 0.150963904530427,
-		"source" : "TESSy COVID-19, national daily data"
+		"value" : 0.679337570386921,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
 		"value" : 0.22644585679564,
-		"source" : "TESSy COVID-19, national daily data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 0.754819522652134,
-		"source" : "TESSy COVID-19, national daily data"
+		"value" : 0.830301474917347,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 1.20771123624341,
-		"source" : "TESSy COVID-19, national daily data"
+		"value" : 1.50963904530427,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 1.88704880663034,
-		"source" : "TESSy COVID-19, national daily data"
+		"value" : 2.41542247248683,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 1.88704880663034,
-		"source" : "TESSy COVID-19, national daily data"
+		"value" : 2.2644585679564,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 0.754819522652134,
-		"source" : "TESSy COVID-19, national daily data"
+		"value" : 1.05674733171299,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 0.377409761326067,
-		"source" : "TESSy COVID-19, national daily data"
+		"value" : 1.81156685436512,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W43",
+		"value" : 1.1322292839782,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 2.03801271116076,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 3.24572394740418,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Estonia",
@@ -26624,6 +29233,20 @@ let euroData = [
 		"country" : "Estonia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W43",
+		"value" : 0.301927809060854,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 0.22644585679564,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Estonia",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
 		"value" : 0.301927809060854,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
@@ -27907,6 +30530,60 @@ let euroData = [
 	},
 	{
 		"country" : "Finland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 74,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 65,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 58,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 70,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 65,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 68,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-21",
 		"year_week" : "2020-W12",
@@ -29180,6 +31857,60 @@ let euroData = [
 		"date" : "2020-10-23",
 		"year_week" : "2020-W43",
 		"value" : 11,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 10,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 10,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 10,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 13,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 15,
+		"source" : "External_Github",
+		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
+	},
+	{
+		"country" : "Finland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 13,
 		"source" : "External_Github",
 		"url" : "https://github.com/HS-Datadesk/koronavirus-avoindata#direct-interface-to-hs-data"
 	},
@@ -31516,6 +34247,132 @@ let euroData = [
 	},
 	{
 		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 17761,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 18955,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 20184,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 21160,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 22153,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 23013,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 24008,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 25120,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 26242,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 27511,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 28403,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 28955,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 29396,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 30217,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-02-02",
 		"year_week" : "2020-W05",
@@ -33721,6 +36578,388 @@ let euroData = [
 	},
 	{
 		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 2761,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 2909,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 3036,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 3147,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 3368,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 3443,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 3569,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 3721,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 3869,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 4080,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 4221,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 4321,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 4410,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 4527,
+		"source" : "Country_Website",
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W09",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W10",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W11",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W12",
+		"value" : 9.78767023051374,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W13",
+		"value" : 28.7302965311909,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W14",
+		"value" : 32.7220662928351,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W15",
+		"value" : 25.9174045683126,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W16",
+		"value" : 16.5087659338578,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W17",
+		"value" : 11.9335262743434,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W18",
+		"value" : 7.18369332058136,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W19",
+		"value" : 4.83339897494039,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W20",
+		"value" : 3.77688570718559,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W21",
+		"value" : 2.64277541976518,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W22",
+		"value" : 1.96529374806931,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W23",
+		"value" : 1.4086843570064,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W24",
+		"value" : 0.984885249601931,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W25",
+		"value" : 0.898334727667216,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W26",
+		"value" : 0.792384950816099,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W27",
+		"value" : 0.84610596443075,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W28",
+		"value" : 0.801338453085208,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W29",
+		"value" : 0.861028468212597,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W30",
+		"value" : 1.01323800678744,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W31",
+		"value" : 1.0371140128384,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W32",
+		"value" : 1.06099001888935,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W33",
+		"value" : 1.35645559376993,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W34",
+		"value" : 1.49971163007567,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W35",
+		"value" : 1.82502221251994,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W36",
+		"value" : 2.40699986001199,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W37",
+		"value" : 3.54260239781058,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W38",
+		"value" : 5.59743116857097,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W39",
+		"value" : 6.06749003769917,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W40",
+		"value" : 6.11673430017927,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W41",
+		"value" : 7.24338333570875,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W42",
+		"value" : 10.9173037667996,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W43",
+		"value" : 17.8696982787623,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 25.2250003928349,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 28.6944825221144,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "France",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W12",
 		"value" : 1.92052623672377,
@@ -33944,6 +37183,20 @@ let euroData = [
 		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
 	},
 	{
+		"country" : "France",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 3.88731223517126,
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
+		"country" : "France",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 4.53196439854707,
+		"url" : "https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/"
+	},
+	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W05",
@@ -33968,7 +37221,7 @@ let euroData = [
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W08",
-		"value" : 0.0662497246269969,
+		"value" : 0.0674542650747605,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -33996,49 +37249,49 @@ let euroData = [
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W12",
-		"value" : 2.80537470284138,
+		"value" : 2.80657924328914,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W13",
-		"value" : 5.32527331956279,
+		"value" : 5.33009148135384,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W14",
-		"value" : 4.96391118523371,
+		"value" : 4.96511572568148,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W15",
-		"value" : 3.63289399045496,
+		"value" : 3.63650761179825,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W16",
-		"value" : 2.55362574925879,
+		"value" : 2.55483028970655,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W17",
-		"value" : 1.78392440313786,
+		"value" : 1.78512894358563,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W18",
-		"value" : 1.17563147701725,
+		"value" : 1.18044963880831,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -34066,7 +37319,7 @@ let euroData = [
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W22",
-		"value" : 0.35654397253802,
+		"value" : 0.357748512985783,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -34101,7 +37354,7 @@ let euroData = [
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W27",
-		"value" : 0.244521710896007,
+		"value" : 0.243317170448243,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -34122,77 +37375,105 @@ let euroData = [
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W30",
-		"value" : 0.332453163582748,
+		"value" : 0.336066784926039,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W31",
-		"value" : 0.358953053433547,
+		"value" : 0.361362134329074,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W32",
-		"value" : 0.320407759105112,
+		"value" : 0.32643046134393,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W33",
-		"value" : 0.368589377015655,
+		"value" : 0.369793917463419,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
-		"value" : 0.319203218657349,
+		"value" : 0.32643046134393,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W35",
-		"value" : 0.283067005224441,
+		"value" : 0.296316950149841,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
-		"value" : 0.307157814179713,
+		"value" : 0.330044082687221,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 0.374612079254473,
+		"value" : 0.401111969105272,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 0.502293366717413,
+		"value" : 0.563724929553355,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 0.496270664478595,
+		"value" : 0.617929249702717,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Germany",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 0.379430241045528,
+		"value" : 0.785360371941854,
+		"source" : "TESSy COVID-19, national daily data"
+	},
+	{
+		"country" : "Germany",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W41",
+		"value" : 1.24790390388307,
+		"source" : "TESSy COVID-19, national daily data"
+	},
+	{
+		"country" : "Germany",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W42",
+		"value" : 1.69599295045112,
+		"source" : "TESSy COVID-19, national daily data"
+	},
+	{
+		"country" : "Germany",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W43",
+		"value" : 2.24164977328802,
+		"source" : "TESSy COVID-19, national daily data"
+	},
+	{
+		"country" : "Germany",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 1.4056987025401,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -34458,14 +37739,28 @@ let euroData = [
 		"country" : "Greece",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 0.354325602290585,
+		"value" : 0.345001244335569,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Greece",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 0.512839687525846,
+		"value" : 0.522164045480861,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Greece",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 0.951084511411569,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Greece",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 1.42662676711735,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
@@ -35923,6 +39218,132 @@ let euroData = [
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
 		"value" : 2449,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 2602,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 2891,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 3166,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 3197,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 3753,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 4048,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 4205,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 4417,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 4767,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 4871,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 5183,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 5489,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 5612,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 5803,
 		"source" : "JRC",
 		"url" : "https://github.com/ec-jrc/COVID-19"
 	},
@@ -37390,6 +40811,132 @@ let euroData = [
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
 		"value" : 221,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 233,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 243,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 263,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 255,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 267,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 281,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 306,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 313,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 348,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 355,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 378,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 391,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 405,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Hungary",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 417,
 		"source" : "JRC",
 		"url" : "https://github.com/ec-jrc/COVID-19"
 	},
@@ -40618,30 +44165,235 @@ let euroData = [
 	{
 		"country" : "Iceland",
 		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W09",
+		"value" : 0.280119106644145,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W10",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W11",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W12",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W13",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W14",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W15",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W16",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W17",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W18",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W19",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W20",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W21",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W22",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W23",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W24",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W25",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W26",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W27",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W28",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W29",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W30",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W31",
+		"value" : 0.280119106644145,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W32",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W33",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W34",
+		"value" : 0.280119106644145,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W35",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W36",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W37",
+		"value" : 0.280119106644145,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W38",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W39",
+		"value" : 1.68071463986487,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
 		"value" : 4.48190570630632,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Iceland",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
 		"value" : 6.44273945281534,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Iceland",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
 		"value" : 4.76202481295047,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Iceland",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
 		"value" : 14.8463126521397,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 7.56321587939192,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Iceland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 6.16262034617119,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Ireland",
@@ -42742,6 +46494,132 @@ let euroData = [
 	},
 	{
 		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 344,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 354,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 327,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 330,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 327,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 322,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 325,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 327,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 306,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 315,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 307,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 295,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 279,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 283,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-27",
 		"year_week" : "2020-W13",
@@ -44650,6 +48528,132 @@ let euroData = [
 	},
 	{
 		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 38,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 38,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 40,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 43,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 42,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 44,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 44,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 44,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 43,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 40,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 38,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 37,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 40,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 40,
+		"source" : "Country_Website",
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W14",
 		"value" : 3.38482619121413,
@@ -44860,6 +48864,20 @@ let euroData = [
 	},
 	{
 		"country" : "Ireland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 3.48677878733504,
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 2.56920542224687,
+		"url" : "https://data.gov.ie/dataset/covid19acutehospitalhistoricsummaryopendata"
+	},
+	{
+		"country" : "Ireland",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W13",
 		"value" : 0,
@@ -45065,6 +49083,20 @@ let euroData = [
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W43",
 		"value" : 0.244686230690178,
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 0.203905192241815,
+		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
+	},
+	{
+		"country" : "Ireland",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 0.387419865259449,
 		"url" : "https://data.gov.ie/dataset/icubishistorictimelinepublicview"
 	},
 	{
@@ -47274,6 +51306,132 @@ let euroData = [
 	},
 	{
 		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 14281,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 15366,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 16517,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 17615,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 18740,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 19809,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 20841,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 21862,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 23339,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 24408,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 25647,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 26520,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 27743,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 29189,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-02-24",
 		"year_week" : "2020-W09",
@@ -49478,6 +53636,132 @@ let euroData = [
 		"url" : "https://github.com/pcm-dpc/COVID-19"
 	},
 	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 1284,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 1411,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 1536,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 1651,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 1746,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 1843,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 1939,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 2022,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 2225,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 2292,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 2391,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 2515,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 2634,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
+		"country" : "Italy",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 2749,
+		"source" : "Country_Github",
+		"url" : "https://github.com/pcm-dpc/COVID-19"
+	},
+	{
 		"country" : "Latvia",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-30",
@@ -51369,6 +55653,132 @@ let euroData = [
 	},
 	{
 		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 158,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 171,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 182,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 197,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 195,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 200,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 223,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 237,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 249,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 240,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 244,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 258,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 242,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 263,
+		"source" : "Country_Website",
+		"url" : "https://infogram.com/covid-19-izplatiba-latvija-1hzj4ozwvnzo2pw"
+	},
+	{
+		"country" : "Latvia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W05",
 		"value" : 0,
@@ -51642,275 +56052,696 @@ let euroData = [
 	},
 	{
 		"country" : "Latvia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W05",
-		"value" : 0,
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 10.2085034750579,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Latvia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W06",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
-	},
-	{
-		"country" : "Latvia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W07",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
-	},
-	{
-		"country" : "Latvia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W08",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
-	},
-	{
-		"country" : "Latvia",
-		"indicator" : "Weekly new ICU admissions per 100k",
-		"year_week" : "2020-W09",
-		"value" : 0,
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 11.3022717045284,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W10",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W11",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W12",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W13",
 		"value" : 0.15625260421007,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W14",
 		"value" : 0.208336805613427,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W15",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.0520842014033567,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W16",
 		"value" : 0.15625260421007,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W17",
 		"value" : 0.208336805613427,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W18",
 		"value" : 0.104168402806713,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W19",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W20",
 		"value" : 0.0520842014033567,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W21",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W22",
 		"value" : 0.0520842014033567,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W23",
 		"value" : 0.104168402806713,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W24",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 0.0520842014033567,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W25",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W26",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W27",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W28",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W29",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W30",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W31",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W32",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W33",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W34",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W35",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W36",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W40",
 		"value" : 0.208336805613427,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W41",
 		"value" : 0.15625260421007,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W42",
 		"value" : 0.31250520842014,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Latvia",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W43",
 		"value" : 0.416673611226854,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 0.989599826663778,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Latvia",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 1.14585243087385,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-06",
+		"year_week" : "2020-W41",
+		"value" : 156,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-13",
+		"year_week" : "2020-W42",
+		"value" : 149,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-14",
+		"year_week" : "2020-W42",
+		"value" : 141,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-15",
+		"year_week" : "2020-W42",
+		"value" : 174,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-16",
+		"year_week" : "2020-W42",
+		"value" : 199,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-19",
+		"year_week" : "2020-W43",
+		"value" : 229,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-20",
+		"year_week" : "2020-W43",
+		"value" : 232,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-21",
+		"year_week" : "2020-W43",
+		"value" : 245,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-22",
+		"year_week" : "2020-W43",
+		"value" : 239,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-23",
+		"year_week" : "2020-W43",
+		"value" : 255,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 322,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 342,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 348,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 370,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 415,
+		"source" : "Country_Website",
+		"url" : "http://sam.lrv.lt/lt/naujienos/koronavirusas"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W09",
+		"value" : 0.107365871395728,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W11",
+		"value" : 0.78734972356867,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W12",
+		"value" : 3.22097614187183,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W13",
+		"value" : 3.04203302287895,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W14",
+		"value" : 2.32626054690743,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W15",
+		"value" : 1.18102458535301,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W16",
+		"value" : 1.43154495194304,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W17",
+		"value" : 1.00208146636013,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W18",
+		"value" : 0.536829356978639,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W19",
+		"value" : 1.07365871395728,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W20",
+		"value" : 0.536829356978639,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W21",
+		"value" : 0.250520366590031,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W22",
+		"value" : 0.250520366590031,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W23",
+		"value" : 0.143154495194304,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W24",
+		"value" : 0.17894311899288,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W25",
+		"value" : 0.17894311899288,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W26",
+		"value" : 0.0357886237985759,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W27",
+		"value" : 0.0715772475971518,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W28",
+		"value" : 0.322097614187183,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W29",
+		"value" : 0.858926971165822,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W30",
+		"value" : 0.322097614187183,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W31",
+		"value" : 0.250520366590031,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W32",
+		"value" : 0.0357886237985759,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W33",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W34",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W35",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W36",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W37",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W38",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W39",
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W42",
+		"value" : 4.18726898443338,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W43",
+		"value" : 6.69247265033369,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 3.61465100365617,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 13.7070429148546,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W08",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W09",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W10",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W11",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W12",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W13",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W14",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W15",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W16",
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W42",
+		"value" : 0.322097614187183,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W43",
+		"value" : 0.393674861784335,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 0.930504218762973,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Lithuania",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 1.7894311899288,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
@@ -51972,7 +56803,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-22",
 		"year_week" : "2020-W12",
-		"value" : 68,
+		"value" : 65,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -51981,7 +56812,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-23",
 		"year_week" : "2020-W13",
-		"value" : 78,
+		"value" : 73,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -51990,7 +56821,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-24",
 		"year_week" : "2020-W13",
-		"value" : 106,
+		"value" : 99,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -51999,7 +56830,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-25",
 		"year_week" : "2020-W13",
-		"value" : 149,
+		"value" : 142,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52008,7 +56839,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-26",
 		"year_week" : "2020-W13",
-		"value" : 146,
+		"value" : 140,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52017,7 +56848,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-27",
 		"year_week" : "2020-W13",
-		"value" : 154,
+		"value" : 148,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52026,7 +56857,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-28",
 		"year_week" : "2020-W13",
-		"value" : 181,
+		"value" : 175,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52035,7 +56866,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-29",
 		"year_week" : "2020-W13",
-		"value" : 187,
+		"value" : 181,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52044,7 +56875,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-30",
 		"year_week" : "2020-W14",
-		"value" : 180,
+		"value" : 174,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52053,7 +56884,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-03-31",
 		"year_week" : "2020-W14",
-		"value" : 185,
+		"value" : 179,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52062,7 +56893,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-01",
 		"year_week" : "2020-W14",
-		"value" : 187,
+		"value" : 181,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52071,7 +56902,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-02",
 		"year_week" : "2020-W14",
-		"value" : 211,
+		"value" : 201,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52080,7 +56911,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-03",
 		"year_week" : "2020-W14",
-		"value" : 212,
+		"value" : 202,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52089,7 +56920,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-04",
 		"year_week" : "2020-W14",
-		"value" : 216,
+		"value" : 206,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52098,7 +56929,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-05",
 		"year_week" : "2020-W14",
-		"value" : 203,
+		"value" : 193,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52107,7 +56938,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-06",
 		"year_week" : "2020-W15",
-		"value" : 201,
+		"value" : 191,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52116,7 +56947,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-07",
 		"year_week" : "2020-W15",
-		"value" : 200,
+		"value" : 190,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52125,7 +56956,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-08",
 		"year_week" : "2020-W15",
-		"value" : 211,
+		"value" : 201,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52134,7 +56965,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-09",
 		"year_week" : "2020-W15",
-		"value" : 202,
+		"value" : 192,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52143,7 +56974,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-10",
 		"year_week" : "2020-W15",
-		"value" : 203,
+		"value" : 193,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52152,7 +56983,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-11",
 		"year_week" : "2020-W15",
-		"value" : 190,
+		"value" : 180,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52161,7 +56992,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-12",
 		"year_week" : "2020-W15",
-		"value" : 201,
+		"value" : 192,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52170,7 +57001,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-13",
 		"year_week" : "2020-W16",
-		"value" : 181,
+		"value" : 172,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52179,7 +57010,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-14",
 		"year_week" : "2020-W16",
-		"value" : 183,
+		"value" : 174,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52188,7 +57019,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-15",
 		"year_week" : "2020-W16",
-		"value" : 168,
+		"value" : 159,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52197,7 +57028,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-16",
 		"year_week" : "2020-W16",
-		"value" : 179,
+		"value" : 170,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52206,7 +57037,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-17",
 		"year_week" : "2020-W16",
-		"value" : 163,
+		"value" : 154,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52215,7 +57046,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-18",
 		"year_week" : "2020-W16",
-		"value" : 176,
+		"value" : 167,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52224,7 +57055,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-19",
 		"year_week" : "2020-W16",
-		"value" : 171,
+		"value" : 162,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52233,7 +57064,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-20",
 		"year_week" : "2020-W17",
-		"value" : 169,
+		"value" : 161,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52242,7 +57073,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-21",
 		"year_week" : "2020-W17",
-		"value" : 164,
+		"value" : 157,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52251,7 +57082,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-22",
 		"year_week" : "2020-W17",
-		"value" : 160,
+		"value" : 153,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52260,7 +57091,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-23",
 		"year_week" : "2020-W17",
-		"value" : 142,
+		"value" : 136,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52269,7 +57100,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-24",
 		"year_week" : "2020-W17",
-		"value" : 139,
+		"value" : 134,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52278,7 +57109,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-25",
 		"year_week" : "2020-W17",
-		"value" : 126,
+		"value" : 121,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52287,7 +57118,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-26",
 		"year_week" : "2020-W17",
-		"value" : 125,
+		"value" : 120,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52296,7 +57127,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-27",
 		"year_week" : "2020-W18",
-		"value" : 114,
+		"value" : 109,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52305,7 +57136,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-28",
 		"year_week" : "2020-W18",
-		"value" : 117,
+		"value" : 114,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52314,7 +57145,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-29",
 		"year_week" : "2020-W18",
-		"value" : 105,
+		"value" : 102,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52323,7 +57154,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-30",
 		"year_week" : "2020-W18",
-		"value" : 94,
+		"value" : 91,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52332,7 +57163,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-01",
 		"year_week" : "2020-W18",
-		"value" : 107,
+		"value" : 104,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52341,7 +57172,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-02",
 		"year_week" : "2020-W18",
-		"value" : 101,
+		"value" : 98,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52350,7 +57181,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-03",
 		"year_week" : "2020-W18",
-		"value" : 99,
+		"value" : 96,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52359,7 +57190,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-04",
 		"year_week" : "2020-W19",
-		"value" : 96,
+		"value" : 93,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52368,7 +57199,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-05",
 		"year_week" : "2020-W19",
-		"value" : 104,
+		"value" : 101,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52377,7 +57208,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-06",
 		"year_week" : "2020-W19",
-		"value" : 99,
+		"value" : 96,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52386,7 +57217,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-07",
 		"year_week" : "2020-W19",
-		"value" : 86,
+		"value" : 83,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52395,7 +57226,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-08",
 		"year_week" : "2020-W19",
-		"value" : 93,
+		"value" : 90,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52404,7 +57235,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-09",
 		"year_week" : "2020-W19",
-		"value" : 85,
+		"value" : 82,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52413,7 +57244,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-10",
 		"year_week" : "2020-W19",
-		"value" : 80,
+		"value" : 77,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52422,7 +57253,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-11",
 		"year_week" : "2020-W20",
-		"value" : 79,
+		"value" : 78,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52431,7 +57262,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-12",
 		"year_week" : "2020-W20",
-		"value" : 80,
+		"value" : 79,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52440,7 +57271,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-13",
 		"year_week" : "2020-W20",
-		"value" : 71,
+		"value" : 70,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52449,7 +57280,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-14",
 		"year_week" : "2020-W20",
-		"value" : 75,
+		"value" : 74,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52458,7 +57289,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-15",
 		"year_week" : "2020-W20",
-		"value" : 66,
+		"value" : 65,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52467,7 +57298,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-16",
 		"year_week" : "2020-W20",
-		"value" : 56,
+		"value" : 55,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52476,7 +57307,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-17",
 		"year_week" : "2020-W20",
-		"value" : 47,
+		"value" : 46,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52485,7 +57316,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-18",
 		"year_week" : "2020-W21",
-		"value" : 53,
+		"value" : 52,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52494,7 +57325,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-19",
 		"year_week" : "2020-W21",
-		"value" : 50,
+		"value" : 49,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52503,7 +57334,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-20",
 		"year_week" : "2020-W21",
-		"value" : 55,
+		"value" : 54,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52512,7 +57343,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-21",
 		"year_week" : "2020-W21",
-		"value" : 42,
+		"value" : 41,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52521,7 +57352,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-22",
 		"year_week" : "2020-W21",
-		"value" : 46,
+		"value" : 45,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52530,7 +57361,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-23",
 		"year_week" : "2020-W21",
-		"value" : 35,
+		"value" : 34,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52539,7 +57370,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-24",
 		"year_week" : "2020-W21",
-		"value" : 33,
+		"value" : 32,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52548,7 +57379,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-25",
 		"year_week" : "2020-W22",
-		"value" : 36,
+		"value" : 35,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52557,7 +57388,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-26",
 		"year_week" : "2020-W22",
-		"value" : 43,
+		"value" : 42,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52566,7 +57397,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-27",
 		"year_week" : "2020-W22",
-		"value" : 34,
+		"value" : 33,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52575,7 +57406,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-28",
 		"year_week" : "2020-W22",
-		"value" : 30,
+		"value" : 29,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52584,7 +57415,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-29",
 		"year_week" : "2020-W22",
-		"value" : 29,
+		"value" : 28,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52593,7 +57424,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-30",
 		"year_week" : "2020-W22",
-		"value" : 27,
+		"value" : 26,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -52602,7 +57433,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-05-31",
 		"year_week" : "2020-W22",
-		"value" : 28,
+		"value" : 27,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -53931,6 +58762,132 @@ let euroData = [
 	},
 	{
 		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 114,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 132,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 140,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 150,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 169,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 168,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 179,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 203,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 224,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 215,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 208,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 208,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 204,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 198,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-02-24",
 		"year_week" : "2020-W09",
@@ -54177,7 +59134,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-22",
 		"year_week" : "2020-W12",
-		"value" : 5,
+		"value" : 2,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54186,7 +59143,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-23",
 		"year_week" : "2020-W13",
-		"value" : 7,
+		"value" : 2,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54195,7 +59152,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-24",
 		"year_week" : "2020-W13",
-		"value" : 9,
+		"value" : 2,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54204,7 +59161,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-25",
 		"year_week" : "2020-W13",
-		"value" : 21,
+		"value" : 14,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54213,7 +59170,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-26",
 		"year_week" : "2020-W13",
-		"value" : 26,
+		"value" : 20,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54222,7 +59179,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-27",
 		"year_week" : "2020-W13",
-		"value" : 26,
+		"value" : 20,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54231,7 +59188,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-28",
 		"year_week" : "2020-W13",
-		"value" : 29,
+		"value" : 23,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54240,7 +59197,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-29",
 		"year_week" : "2020-W13",
-		"value" : 27,
+		"value" : 21,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54249,7 +59206,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-30",
 		"year_week" : "2020-W14",
-		"value" : 30,
+		"value" : 24,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54258,7 +59215,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-31",
 		"year_week" : "2020-W14",
-		"value" : 32,
+		"value" : 26,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54267,7 +59224,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-01",
 		"year_week" : "2020-W14",
-		"value" : 33,
+		"value" : 27,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54276,7 +59233,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-02",
 		"year_week" : "2020-W14",
-		"value" : 40,
+		"value" : 30,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54285,7 +59242,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-03",
 		"year_week" : "2020-W14",
-		"value" : 45,
+		"value" : 35,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54294,7 +59251,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-04",
 		"year_week" : "2020-W14",
-		"value" : 43,
+		"value" : 33,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54303,7 +59260,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-05",
 		"year_week" : "2020-W14",
-		"value" : 43,
+		"value" : 33,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54312,7 +59269,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-06",
 		"year_week" : "2020-W15",
-		"value" : 41,
+		"value" : 31,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54321,7 +59278,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-07",
 		"year_week" : "2020-W15",
-		"value" : 41,
+		"value" : 31,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54330,7 +59287,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-08",
 		"year_week" : "2020-W15",
-		"value" : 43,
+		"value" : 33,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54339,7 +59296,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-09",
 		"year_week" : "2020-W15",
-		"value" : 39,
+		"value" : 29,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54348,7 +59305,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-10",
 		"year_week" : "2020-W15",
-		"value" : 38,
+		"value" : 28,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54357,7 +59314,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-11",
 		"year_week" : "2020-W15",
-		"value" : 40,
+		"value" : 30,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54366,7 +59323,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-12",
 		"year_week" : "2020-W15",
-		"value" : 40,
+		"value" : 31,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54375,7 +59332,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-13",
 		"year_week" : "2020-W16",
-		"value" : 42,
+		"value" : 33,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54384,7 +59341,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-14",
 		"year_week" : "2020-W16",
-		"value" : 43,
+		"value" : 34,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54393,7 +59350,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-15",
 		"year_week" : "2020-W16",
-		"value" : 44,
+		"value" : 35,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54402,7 +59359,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-16",
 		"year_week" : "2020-W16",
-		"value" : 41,
+		"value" : 32,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54411,7 +59368,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-17",
 		"year_week" : "2020-W16",
-		"value" : 39,
+		"value" : 30,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54420,7 +59377,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-18",
 		"year_week" : "2020-W16",
-		"value" : 40,
+		"value" : 31,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54429,7 +59386,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-19",
 		"year_week" : "2020-W16",
-		"value" : 39,
+		"value" : 30,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54438,7 +59395,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-20",
 		"year_week" : "2020-W17",
-		"value" : 39,
+		"value" : 31,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54447,7 +59404,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-21",
 		"year_week" : "2020-W17",
-		"value" : 38,
+		"value" : 31,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54456,7 +59413,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-22",
 		"year_week" : "2020-W17",
-		"value" : 35,
+		"value" : 28,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54465,7 +59422,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-23",
 		"year_week" : "2020-W17",
-		"value" : 30,
+		"value" : 24,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54474,7 +59431,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-24",
 		"year_week" : "2020-W17",
-		"value" : 30,
+		"value" : 25,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54483,7 +59440,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-25",
 		"year_week" : "2020-W17",
-		"value" : 28,
+		"value" : 23,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54492,7 +59449,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-26",
 		"year_week" : "2020-W17",
-		"value" : 25,
+		"value" : 20,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54501,7 +59458,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-27",
 		"year_week" : "2020-W18",
-		"value" : 25,
+		"value" : 20,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54510,7 +59467,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-28",
 		"year_week" : "2020-W18",
-		"value" : 25,
+		"value" : 22,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54519,7 +59476,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-29",
 		"year_week" : "2020-W18",
-		"value" : 27,
+		"value" : 24,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54528,7 +59485,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-30",
 		"year_week" : "2020-W18",
-		"value" : 27,
+		"value" : 24,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54537,7 +59494,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-01",
 		"year_week" : "2020-W18",
-		"value" : 28,
+		"value" : 25,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54546,7 +59503,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-02",
 		"year_week" : "2020-W18",
-		"value" : 27,
+		"value" : 24,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54555,7 +59512,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-03",
 		"year_week" : "2020-W18",
-		"value" : 26,
+		"value" : 23,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54564,7 +59521,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-04",
 		"year_week" : "2020-W19",
-		"value" : 25,
+		"value" : 22,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54573,7 +59530,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-05",
 		"year_week" : "2020-W19",
-		"value" : 23,
+		"value" : 20,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54582,7 +59539,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-06",
 		"year_week" : "2020-W19",
-		"value" : 24,
+		"value" : 21,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54591,7 +59548,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-07",
 		"year_week" : "2020-W19",
-		"value" : 19,
+		"value" : 16,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54600,7 +59557,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-08",
 		"year_week" : "2020-W19",
-		"value" : 18,
+		"value" : 15,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54609,7 +59566,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-09",
 		"year_week" : "2020-W19",
-		"value" : 17,
+		"value" : 14,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54618,7 +59575,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-10",
 		"year_week" : "2020-W19",
-		"value" : 21,
+		"value" : 18,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54627,7 +59584,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-11",
 		"year_week" : "2020-W20",
-		"value" : 23,
+		"value" : 22,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54636,7 +59593,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-12",
 		"year_week" : "2020-W20",
-		"value" : 23,
+		"value" : 22,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54645,7 +59602,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-13",
 		"year_week" : "2020-W20",
-		"value" : 12,
+		"value" : 11,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54654,7 +59611,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-14",
 		"year_week" : "2020-W20",
-		"value" : 12,
+		"value" : 11,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54663,7 +59620,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-15",
 		"year_week" : "2020-W20",
-		"value" : 16,
+		"value" : 15,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54672,7 +59629,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-16",
 		"year_week" : "2020-W20",
-		"value" : 14,
+		"value" : 13,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54681,7 +59638,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-17",
 		"year_week" : "2020-W20",
-		"value" : 9,
+		"value" : 8,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54690,7 +59647,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-18",
 		"year_week" : "2020-W21",
-		"value" : 11,
+		"value" : 10,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54699,7 +59656,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-19",
 		"year_week" : "2020-W21",
-		"value" : 7,
+		"value" : 6,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54708,7 +59665,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-20",
 		"year_week" : "2020-W21",
-		"value" : 7,
+		"value" : 6,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54717,7 +59674,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-21",
 		"year_week" : "2020-W21",
-		"value" : 6,
+		"value" : 5,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54726,7 +59683,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-22",
 		"year_week" : "2020-W21",
-		"value" : 9,
+		"value" : 8,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54735,7 +59692,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-23",
 		"year_week" : "2020-W21",
-		"value" : 8,
+		"value" : 7,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54744,7 +59701,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-24",
 		"year_week" : "2020-W21",
-		"value" : 5,
+		"value" : 4,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54753,7 +59710,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-25",
 		"year_week" : "2020-W22",
-		"value" : 6,
+		"value" : 5,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54762,7 +59719,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-26",
 		"year_week" : "2020-W22",
-		"value" : 5,
+		"value" : 4,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54771,7 +59728,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-27",
 		"year_week" : "2020-W22",
-		"value" : 5,
+		"value" : 4,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54780,7 +59737,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-28",
 		"year_week" : "2020-W22",
-		"value" : 5,
+		"value" : 4,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54789,7 +59746,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-29",
 		"year_week" : "2020-W22",
-		"value" : 4,
+		"value" : 3,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54798,7 +59755,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-30",
 		"year_week" : "2020-W22",
-		"value" : 4,
+		"value" : 3,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -54807,7 +59764,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-05-31",
 		"year_week" : "2020-W22",
-		"value" : 4,
+		"value" : 3,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -55923,7 +60880,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-02",
 		"year_week" : "2020-W40",
-		"value" : 4,
+		"value" : 3,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -56004,7 +60961,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-11",
 		"year_week" : "2020-W41",
-		"value" : 3,
+		"value" : 2,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -56013,7 +60970,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-12",
 		"year_week" : "2020-W42",
-		"value" : 3,
+		"value" : 2,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -56058,7 +61015,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-17",
 		"year_week" : "2020-W42",
-		"value" : 4,
+		"value" : 3,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -56085,7 +61042,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-20",
 		"year_week" : "2020-W43",
-		"value" : 8,
+		"value" : 7,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -56112,7 +61069,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-23",
 		"year_week" : "2020-W43",
-		"value" : 12,
+		"value" : 11,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -56131,6 +61088,132 @@ let euroData = [
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
 		"value" : 12,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 16,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 16,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 21,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 24,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 26,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 27,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 29,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 29,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 30,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 36,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 37,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 41,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 36,
+		"source" : "Country_Website",
+		"url" : "https://covid19.public.lu/fr/graph.html"
+	},
+	{
+		"country" : "Luxembourg",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 40,
 		"source" : "Country_Website",
 		"url" : "https://covid19.public.lu/fr/graph.html"
 	},
@@ -57039,7 +62122,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-10",
 		"year_week" : "2020-W11",
-		"value" : 41,
+		"value" : 42,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57075,7 +62158,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-14",
 		"year_week" : "2020-W11",
-		"value" : 98,
+		"value" : 99,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57084,7 +62167,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-15",
 		"year_week" : "2020-W11",
-		"value" : 122,
+		"value" : 123,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57093,7 +62176,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-16",
 		"year_week" : "2020-W12",
-		"value" : 152,
+		"value" : 154,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57102,7 +62185,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-17",
 		"year_week" : "2020-W12",
-		"value" : 181,
+		"value" : 183,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57111,7 +62194,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-18",
 		"year_week" : "2020-W12",
-		"value" : 230,
+		"value" : 232,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57120,7 +62203,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-19",
 		"year_week" : "2020-W12",
-		"value" : 288,
+		"value" : 290,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57129,7 +62212,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-20",
 		"year_week" : "2020-W12",
-		"value" : 363,
+		"value" : 365,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57138,7 +62221,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-21",
 		"year_week" : "2020-W12",
-		"value" : 432,
+		"value" : 434,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57147,7 +62230,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-22",
 		"year_week" : "2020-W12",
-		"value" : 482,
+		"value" : 484,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57156,7 +62239,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-23",
 		"year_week" : "2020-W13",
-		"value" : 575,
+		"value" : 577,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57165,7 +62248,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-24",
 		"year_week" : "2020-W13",
-		"value" : 655,
+		"value" : 657,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57174,7 +62257,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-25",
 		"year_week" : "2020-W13",
-		"value" : 754,
+		"value" : 756,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57183,7 +62266,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-26",
 		"year_week" : "2020-W13",
-		"value" : 840,
+		"value" : 842,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57192,7 +62275,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-27",
 		"year_week" : "2020-W13",
-		"value" : 928,
+		"value" : 929,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57201,7 +62284,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-28",
 		"year_week" : "2020-W13",
-		"value" : 993,
+		"value" : 994,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57210,7 +62293,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-29",
 		"year_week" : "2020-W13",
-		"value" : 1040,
+		"value" : 1041,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57219,7 +62302,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-30",
 		"year_week" : "2020-W14",
-		"value" : 1128,
+		"value" : 1129,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57228,7 +62311,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-03-31",
 		"year_week" : "2020-W14",
-		"value" : 1193,
+		"value" : 1194,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57237,7 +62320,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-01",
 		"year_week" : "2020-W14",
-		"value" : 1210,
+		"value" : 1211,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57246,7 +62329,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-02",
 		"year_week" : "2020-W14",
-		"value" : 1251,
+		"value" : 1252,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57255,7 +62338,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-03",
 		"year_week" : "2020-W14",
-		"value" : 1278,
+		"value" : 1279,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57264,7 +62347,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-04",
 		"year_week" : "2020-W14",
-		"value" : 1282,
+		"value" : 1283,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57273,7 +62356,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-05",
 		"year_week" : "2020-W14",
-		"value" : 1306,
+		"value" : 1308,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57282,7 +62365,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-06",
 		"year_week" : "2020-W15",
-		"value" : 1314,
+		"value" : 1316,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57291,7 +62374,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-07",
 		"year_week" : "2020-W15",
-		"value" : 1316,
+		"value" : 1318,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57300,7 +62383,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-08",
 		"year_week" : "2020-W15",
-		"value" : 1283,
+		"value" : 1285,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57309,7 +62392,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-09",
 		"year_week" : "2020-W15",
-		"value" : 1278,
+		"value" : 1280,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57318,7 +62401,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-10",
 		"year_week" : "2020-W15",
-		"value" : 1285,
+		"value" : 1287,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57327,7 +62410,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-11",
 		"year_week" : "2020-W15",
-		"value" : 1250,
+		"value" : 1252,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57336,7 +62419,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-12",
 		"year_week" : "2020-W15",
-		"value" : 1232,
+		"value" : 1234,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57345,7 +62428,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-13",
 		"year_week" : "2020-W16",
-		"value" : 1215,
+		"value" : 1217,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57354,7 +62437,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-14",
 		"year_week" : "2020-W16",
-		"value" : 1192,
+		"value" : 1194,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57363,7 +62446,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-15",
 		"year_week" : "2020-W16",
-		"value" : 1167,
+		"value" : 1169,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57372,7 +62455,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-16",
 		"year_week" : "2020-W16",
-		"value" : 1134,
+		"value" : 1136,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57381,7 +62464,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-17",
 		"year_week" : "2020-W16",
-		"value" : 1104,
+		"value" : 1106,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57390,7 +62473,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-18",
 		"year_week" : "2020-W16",
-		"value" : 1058,
+		"value" : 1060,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57399,7 +62482,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-19",
 		"year_week" : "2020-W16",
-		"value" : 1029,
+		"value" : 1031,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57408,7 +62491,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-20",
 		"year_week" : "2020-W17",
-		"value" : 1010,
+		"value" : 1012,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57417,7 +62500,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-21",
 		"year_week" : "2020-W17",
-		"value" : 973,
+		"value" : 975,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57426,7 +62509,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-22",
 		"year_week" : "2020-W17",
-		"value" : 917,
+		"value" : 918,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57435,7 +62518,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-23",
 		"year_week" : "2020-W17",
-		"value" : 875,
+		"value" : 876,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -57444,7 +62527,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-04-24",
 		"year_week" : "2020-W17",
-		"value" : 858,
+		"value" : 859,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58002,7 +63085,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-06-25",
 		"year_week" : "2020-W26",
-		"value" : 56,
+		"value" : 55,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58011,7 +63094,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-06-26",
 		"year_week" : "2020-W26",
-		"value" : 50,
+		"value" : 49,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58020,7 +63103,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-06-27",
 		"year_week" : "2020-W26",
-		"value" : 45,
+		"value" : 44,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58029,7 +63112,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-06-28",
 		"year_week" : "2020-W26",
-		"value" : 41,
+		"value" : 40,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58038,7 +63121,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-06-29",
 		"year_week" : "2020-W27",
-		"value" : 41,
+		"value" : 40,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58236,7 +63319,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-21",
 		"year_week" : "2020-W30",
-		"value" : 27,
+		"value" : 26,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58245,7 +63328,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-22",
 		"year_week" : "2020-W30",
-		"value" : 27,
+		"value" : 26,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58254,7 +63337,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-23",
 		"year_week" : "2020-W30",
-		"value" : 25,
+		"value" : 24,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58263,7 +63346,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-24",
 		"year_week" : "2020-W30",
-		"value" : 24,
+		"value" : 23,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58272,7 +63355,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-25",
 		"year_week" : "2020-W30",
-		"value" : 21,
+		"value" : 20,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58281,7 +63364,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-26",
 		"year_week" : "2020-W30",
-		"value" : 21,
+		"value" : 20,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58290,7 +63373,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-27",
 		"year_week" : "2020-W31",
-		"value" : 25,
+		"value" : 24,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58299,7 +63382,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-28",
 		"year_week" : "2020-W31",
-		"value" : 24,
+		"value" : 23,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58308,7 +63391,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-29",
 		"year_week" : "2020-W31",
-		"value" : 23,
+		"value" : 22,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58317,7 +63400,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-30",
 		"year_week" : "2020-W31",
-		"value" : 25,
+		"value" : 24,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58326,7 +63409,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-31",
 		"year_week" : "2020-W31",
-		"value" : 28,
+		"value" : 27,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58335,7 +63418,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-08-01",
 		"year_week" : "2020-W31",
-		"value" : 29,
+		"value" : 28,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58344,7 +63427,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-08-02",
 		"year_week" : "2020-W31",
-		"value" : 30,
+		"value" : 29,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58353,7 +63436,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-08-03",
 		"year_week" : "2020-W32",
-		"value" : 33,
+		"value" : 32,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58362,7 +63445,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-08-04",
 		"year_week" : "2020-W32",
-		"value" : 34,
+		"value" : 33,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58371,7 +63454,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-08-05",
 		"year_week" : "2020-W32",
-		"value" : 33,
+		"value" : 32,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58380,7 +63463,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-08-06",
 		"year_week" : "2020-W32",
-		"value" : 35,
+		"value" : 34,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58389,7 +63472,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-08-07",
 		"year_week" : "2020-W32",
-		"value" : 35,
+		"value" : 34,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58848,7 +63931,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-09-27",
 		"year_week" : "2020-W39",
-		"value" : 155,
+		"value" : 154,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58857,7 +63940,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-09-28",
 		"year_week" : "2020-W40",
-		"value" : 163,
+		"value" : 162,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58902,7 +63985,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-03",
 		"year_week" : "2020-W40",
-		"value" : 189,
+		"value" : 190,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58911,7 +63994,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-04",
 		"year_week" : "2020-W40",
-		"value" : 202,
+		"value" : 203,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58920,7 +64003,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-05",
 		"year_week" : "2020-W41",
-		"value" : 217,
+		"value" : 218,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58929,7 +64012,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-06",
 		"year_week" : "2020-W41",
-		"value" : 238,
+		"value" : 239,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58938,7 +64021,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-07",
 		"year_week" : "2020-W41",
-		"value" : 251,
+		"value" : 252,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58947,7 +64030,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-08",
 		"year_week" : "2020-W41",
-		"value" : 257,
+		"value" : 258,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58956,7 +64039,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-09",
 		"year_week" : "2020-W41",
-		"value" : 274,
+		"value" : 275,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58965,7 +64048,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-10",
 		"year_week" : "2020-W41",
-		"value" : 274,
+		"value" : 275,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58974,7 +64057,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-11",
 		"year_week" : "2020-W41",
-		"value" : 279,
+		"value" : 280,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58983,7 +64066,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-12",
 		"year_week" : "2020-W42",
-		"value" : 301,
+		"value" : 303,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -58992,7 +64075,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-13",
 		"year_week" : "2020-W42",
-		"value" : 321,
+		"value" : 322,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59010,7 +64093,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-15",
 		"year_week" : "2020-W42",
-		"value" : 358,
+		"value" : 359,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59019,7 +64102,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-16",
 		"year_week" : "2020-W42",
-		"value" : 394,
+		"value" : 398,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59028,7 +64111,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-17",
 		"year_week" : "2020-W42",
-		"value" : 389,
+		"value" : 392,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59037,7 +64120,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-18",
 		"year_week" : "2020-W42",
-		"value" : 409,
+		"value" : 412,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59046,7 +64129,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-19",
 		"year_week" : "2020-W43",
-		"value" : 448,
+		"value" : 449,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59064,7 +64147,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-21",
 		"year_week" : "2020-W43",
-		"value" : 493,
+		"value" : 492,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59073,7 +64156,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-22",
 		"year_week" : "2020-W43",
-		"value" : 508,
+		"value" : 505,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59082,7 +64165,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-23",
 		"year_week" : "2020-W43",
-		"value" : 518,
+		"value" : 516,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59091,7 +64174,7 @@ let euroData = [
 		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-10-24",
 		"year_week" : "2020-W43",
-		"value" : 525,
+		"value" : 523,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59101,6 +64184,132 @@ let euroData = [
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
 		"value" : 537,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 563,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 576,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 594,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 603,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 614,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 620,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 626,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 652,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 650,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 655,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 652,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 650,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 642,
+		"source" : "Other Website",
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 646,
 		"source" : "Other Website",
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
@@ -59178,7 +64387,7 @@ let euroData = [
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W15",
-		"value" : 7.58585600656585,
+		"value" : 7.59164231930922,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -59311,7 +64520,7 @@ let euroData = [
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
-		"value" : 0.254597760708541,
+		"value" : 0.260384073451917,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -59325,56 +64534,70 @@ let euroData = [
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
-		"value" : 0.329819826372428,
+		"value" : 0.347178764602556,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 0.49762289593033,
+		"value" : 0.503409208673706,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 1.07625417026792,
+		"value" : 1.08782679575468,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 1.55073181522475,
+		"value" : 1.59123600442838,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 1.93841476903094,
+		"value" : 2.02520946018158,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 2.42446503947452,
+		"value" : 2.6443449237228,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 2.87001112071446,
+		"value" : 3.2924119509809,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 2.09464521310209,
+		"value" : 3.69745384301722,
+		"source" : "TESSy COVID-19, national daily data"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 3.16511307062663,
+		"source" : "TESSy COVID-19, national daily data"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 1.55651812796813,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -59395,14 +64618,14 @@ let euroData = [
 		"country" : "Netherlands",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W11",
-		"value" : 0.601776525311097,
+		"value" : 0.607562838054473,
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W12",
-		"value" : 2.32031141009375,
+		"value" : 2.32609772283712,
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
 	{
@@ -59416,7 +64639,7 @@ let euroData = [
 		"country" : "Netherlands",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W14",
-		"value" : 3.50071920974244,
+		"value" : 3.50650552248581,
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
 	{
@@ -59500,7 +64723,7 @@ let euroData = [
 		"country" : "Netherlands",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W26",
-		"value" : 0.0347178764602556,
+		"value" : 0.0289315637168797,
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
 	{
@@ -59598,7 +64821,7 @@ let euroData = [
 		"country" : "Netherlands",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 0.676998590974984,
+		"value" : 0.68278490371836,
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
 	{
@@ -59612,14 +64835,28 @@ let euroData = [
 		"country" : "Netherlands",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 1.52758656425125,
+		"value" : 1.55651812796813,
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
 	{
 		"country" : "Netherlands",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 1.86897901611043,
+		"value" : 1.90369689257068,
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 1.90948320531406,
+		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
+	},
+	{
+		"country" : "Netherlands",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 1.59702231717176,
 		"url" : "https://nlcovid-19-esrinl-content.hub.arcgis.com/pages/kaarten"
 	},
 	{
@@ -61360,6 +66597,132 @@ let euroData = [
 		"url" : "https://utvikler.helsedirektoratet.no/"
 	},
 	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 54,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 51,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 49,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 47,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 60,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 60,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 63,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 64,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 61,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 70,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 72,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 88,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 92,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
+		"country" : "Norway",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 96,
+		"source" : "Country_API",
+		"url" : "https://utvikler.helsedirektoratet.no/"
+	},
+	{
 		"country" : "Poland",
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-04-08",
@@ -63020,7 +68383,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-17",
 		"year_week" : "2020-W42",
-		"value" : 1612,
+		"value" : 7612,
 		"source" : "Country_Website",
 		"url" : "https://t.co/iWmgW1iyWI"
 	},
@@ -63068,6 +68431,159 @@ let euroData = [
 		"value" : 10091,
 		"source" : "Country_Website",
 		"url" : "https://t.co/QVpvz2Ix71"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-23",
+		"year_week" : "2020-W43",
+		"value" : 10788,
+		"source" : "Country_Website",
+		"url" : "https://t.co/ckxFvmuaB1"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-24",
+		"year_week" : "2020-W43",
+		"value" : 11496,
+		"source" : "Country_Website",
+		"url" : "https://t.co/7ZQgIATiAA"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-25",
+		"year_week" : "2020-W43",
+		"value" : 11887,
+		"source" : "Country_Website",
+		"url" : "https://t.co/FzqfwBkaO7"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 12282,
+		"source" : "Country_Website",
+		"url" : "https://t.co/Izwa1y62f7"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 13291,
+		"source" : "Country_Website",
+		"url" : "https://t.co/cFkAS9nmRt"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 13931,
+		"source" : "Country_Website",
+		"url" : "https://t.co/aKvMBQdUPy"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 14631,
+		"source" : "Country_Website",
+		"url" : "https://t.co/aimLaMZLkR"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 15444,
+		"source" : "Country_Website",
+		"url" : "https://t.co/sPkxlFktP1"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 16144,
+		"source" : "Country_Website",
+		"url" : "https://t.co/THtQhFuvhQ"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 16427,
+		"source" : "Country_Website",
+		"url" : "https://t.co/nH9aSWRiGi"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 17223,
+		"source" : "Country_Website",
+		"url" : "https://t.co/8NKURfcnRq"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 18160,
+		"source" : "Country_Website",
+		"url" : "https://t.co/f6IHgpL01y"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 18654,
+		"source" : "Country_Website",
+		"url" : "https://t.co/qj0cNHBIUZ"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 19114,
+		"source" : "Country_Website",
+		"url" : "https://t.co/0F81mCGLim"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 19479,
+		"source" : "Country_Website",
+		"url" : "https://t.co/pKrrz6GNtt"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 20249,
+		"source" : "Country_Website",
+		"url" : "https://t.co/t0QqiQYAkO"
+	},
+	{
+		"country" : "Poland",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 20214,
+		"source" : "Country_Website",
+		"url" : "https://t.co/vXfghIxXFM"
 	},
 	{
 		"country" : "Portugal",
@@ -65199,6 +70715,132 @@ let euroData = [
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
 		"value" : 1574,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 1672,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 1747,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 1794,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 1794,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 1927,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 1972,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 2122,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 2255,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 2349,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 2337,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 2362,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 2425,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 2420,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 2522,
 		"source" : "Country_Website",
 		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
 	},
@@ -67337,6 +72979,132 @@ let euroData = [
 	},
 	{
 		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 240,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 253,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 262,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 262,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 275,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 286,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 284,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 294,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 320,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 325,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 320,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 340,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 366,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 378,
+		"source" : "Country_Website",
+		"url" : "https://covid19.min-saude.pt/ponto-de-situacao-atual-em-portugal/"
+	},
+	{
+		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W05",
 		"value" : 0.0875774586130825,
@@ -67451,7 +73219,7 @@ let euroData = [
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W21",
-		"value" : 1.39150850907453,
+		"value" : 1.40123933780932,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -67493,21 +73261,21 @@ let euroData = [
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W27",
-		"value" : 1.05092950335699,
+		"value" : 1.06066033209178,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W28",
-		"value" : 1.12877613323529,
+		"value" : 1.13850696197007,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W29",
-		"value" : 0.973082873478694,
+		"value" : 0.982813702213481,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -67542,7 +73310,7 @@ let euroData = [
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
-		"value" : 0.642234696495938,
+		"value" : 0.651965525230725,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -67556,56 +73324,70 @@ let euroData = [
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
-		"value" : 1.15796861943965,
+		"value" : 1.17743027690922,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 1.39150850907453,
+		"value" : 1.44016265274847,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 1.54720176883112,
+		"value" : 1.61531756997463,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 1.47908596768762,
+		"value" : 1.50827845389198,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 1.54720176883112,
+		"value" : 1.61531756997463,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 1.77101082973122,
+		"value" : 1.83912663087473,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 2.43270718369674,
+		"value" : 2.80247867561864,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
 		"country" : "Portugal",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 2.3840530400228,
+		"value" : 3.56148331693202,
+		"source" : "TESSy COVID-19, national daily data"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 4.03829392493658,
+		"source" : "TESSy COVID-19, national daily data"
+	},
+	{
+		"country" : "Portugal",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 3.43498254337979,
 		"source" : "TESSy COVID-19, national daily data"
 	},
 	{
@@ -68637,6 +74419,51 @@ let euroData = [
 	{
 		"country" : "Romania",
 		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-22",
+		"year_week" : "2020-W30",
+		"value" : 293,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/07/22/buletin-informativ-22-07-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-23",
+		"year_week" : "2020-W30",
+		"value" : 285,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/07/23/buletin-informativ-23-07-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-24",
+		"year_week" : "2020-W30",
+		"value" : 301,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/07/24/buletin-informativ-24-07-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-25",
+		"year_week" : "2020-W30",
+		"value" : 315,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/07/25/buletin-informativ-25-07-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-26",
+		"year_week" : "2020-W30",
+		"value" : 351,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/07/26/buletin-informativ-26-07-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
 		"date" : "2020-07-27",
 		"year_week" : "2020-W31",
 		"value" : 353,
@@ -69446,232 +75273,379 @@ let euroData = [
 	},
 	{
 		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 823,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/10/26/buletin-informativ-26-10-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 824,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/10/27/buletin-informativ-27-10-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 861,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/10/28/buletin-informativ-28-10-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 868,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/10/29/buletin-informativ-29-10-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 917,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/10/30/buletin-informativ-30-10-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 923,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/10/31/buletin-informativ-31-10-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 910,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/11/01/buletin-informativ-01-11-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 916,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/11/02/buletin-informativ-02-11-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 974,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/11/03/buletin-informativ-03-11-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 1001,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/11/04/buletin-informativ-04-11-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 1014,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/11/05/buletin-informativ-05-11-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 1001,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/11/06/buletin-informativ-06-11-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 1048,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/11/07/buletin-informativ-07-11-2020/"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 1056,
+		"source" : "Country_Website",
+		"url" : "http://www.ms.ro/2020/11/08/buletin-informativ-08-11-2020/"
+	},
+	{
+		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W09",
 		"value" : 0.015452401504075,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W10",
 		"value" : 0.0618096060162998,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W11",
 		"value" : 0.73656447169424,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W12",
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.98305819302295,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W13",
 		"value" : 7.08750148986905,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W14",
 		"value" : 10.9918082698987,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W15",
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 6.3148814146653,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W16",
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 5.59892014497649,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W17",
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 6.52091343471963,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W18",
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 5.27957051389228,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W19",
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 3.30681392187204,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W20",
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 1.92639938750801,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W21",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W22",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W23",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W24",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W25",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W26",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W27",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W28",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W29",
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W30",
 		"value" : 38.6670593636969,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W31",
 		"value" : 38.3580113336154,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W32",
 		"value" : 39.7332750674781,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W33",
 		"value" : 22.7768398170065,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
 		"value" : 39.7435766684808,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W35",
 		"value" : 39.3830206333857,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
 		"value" : 41.3145708213951,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
 		"value" : 40.135037506584,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
 		"value" : 44.9973931798663,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
 		"value" : 48.8141363513728,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
 		"value" : 54.7375569279348,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
 		"value" : 94.357514384383,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
 		"value" : 118.792911962827,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Romania",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
 		"value" : 136.042942841876,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 173.175063656168,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Romania",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 242.448179598936,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovakia",
@@ -71310,6 +77284,123 @@ let euroData = [
 		"value" : 1117,
 		"source" : "JRC",
 		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 1117,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 1170,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 1231,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 1291,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 1411,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 1399,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 1330,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 1462,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 1542,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 1696,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 1742,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovakia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 1731,
+		"source" : "JRC",
+		"url" : "https://github.com/ec-jrc/COVID-19"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-03-10",
+		"year_week" : "2020-W11",
+		"value" : 18,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
 	},
 	{
 		"country" : "Slovenia",
@@ -73369,6 +79460,141 @@ let euroData = [
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
 		"value" : 508,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 523,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 560,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 612,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 660,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 703,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 779,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 821,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 868,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 925,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 979,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 1023,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 1069,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 1084,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 1125,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-03-10",
+		"year_week" : "2020-W11",
+		"value" : 1,
 		"source" : "Country_Github",
 		"url" : "https://github.com/sledilnik/data"
 	},
@@ -75435,548 +81661,1688 @@ let euroData = [
 	},
 	{
 		"country" : "Slovenia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W05",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 82,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
 	},
 	{
 		"country" : "Slovenia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W06",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 88,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
 	},
 	{
 		"country" : "Slovenia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W07",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 102,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
 	},
 	{
 		"country" : "Slovenia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W08",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 114,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
 	},
 	{
 		"country" : "Slovenia",
-		"indicator" : "Weekly new hospital admissions per 100k",
-		"year_week" : "2020-W09",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 123,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 123,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 131,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 140,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 145,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 155,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 165,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 165,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 174,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 175,
+		"source" : "Country_Github",
+		"url" : "https://github.com/sledilnik/data"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W10",
 		"value" : 0.865007006556753,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W11",
 		"value" : 2.35474129562672,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W12",
 		"value" : 2.40279724043543,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W13",
 		"value" : 3.60419586065314,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W14",
 		"value" : 1.82612590273092,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W15",
 		"value" : 1.44167834426126,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W16",
 		"value" : 0.720839172130628,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W17",
 		"value" : 0.624727282513211,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W18",
 		"value" : 0.288335668852251,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W19",
 		"value" : 0.096111889617417,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W20",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W21",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W22",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W23",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W24",
 		"value" : 0.096111889617417,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W25",
-		"value" : 0,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W26",
 		"value" : 0.0480559448087085,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W27",
 		"value" : 0.528615392895794,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W28",
 		"value" : 0.384447558469668,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W29",
 		"value" : 0.288335668852251,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W30",
 		"value" : 0.480559448087085,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W31",
 		"value" : 0.384447558469668,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W32",
 		"value" : 0.384447558469668,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W33",
 		"value" : 0.240279724043543,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
 		"value" : 0.240279724043543,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W35",
 		"value" : 0.33639161366096,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
 		"value" : 0.768895116939336,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
 		"value" : 1.73001401311351,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
 		"value" : 1.97029373715705,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
 		"value" : 2.06640562677447,
-		"source" : "TESSy COVID-19, national weekly data"
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 2.97946857813993,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 3.02752452294864,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 4.42114692240118,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 4.46920286720989,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 7.59283927977594,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 7.83311900381949,
+		"source" : "TESSy COVID-19"
 	},
 	{
 		"country" : "Slovenia",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 7.59283927977594,
-		"source" : "TESSy COVID-19, national weekly data"
+		"value" : 14.7531750562735,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 17.3001401311351,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Slovenia",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 14.9453988355084,
+		"source" : "TESSy COVID-19"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-08-20",
+		"year_week" : "2020-W34",
+		"value" : 4636,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-08-21",
+		"year_week" : "2020-W34",
+		"value" : 4703,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-08-24",
+		"year_week" : "2020-W35",
+		"value" : 5484,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-08-25",
+		"year_week" : "2020-W35",
+		"value" : 5688,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-08-26",
+		"year_week" : "2020-W35",
+		"value" : 5903,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-08-27",
+		"year_week" : "2020-W35",
+		"value" : 6034,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-08-28",
+		"year_week" : "2020-W35",
+		"value" : 6224,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-08-31",
+		"year_week" : "2020-W36",
+		"value" : 6957,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-01",
+		"year_week" : "2020-W36",
+		"value" : 6807,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-02",
+		"year_week" : "2020-W36",
+		"value" : 6924,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-03",
+		"year_week" : "2020-W36",
+		"value" : 7194,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-04",
+		"year_week" : "2020-W36",
+		"value" : 7392,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-07",
+		"year_week" : "2020-W37",
+		"value" : 7892,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-08",
+		"year_week" : "2020-W37",
+		"value" : 7972,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-09",
+		"year_week" : "2020-W37",
+		"value" : 8398,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-10",
+		"year_week" : "2020-W37",
+		"value" : 8401,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-11",
+		"year_week" : "2020-W37",
+		"value" : 8658,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-14",
+		"year_week" : "2020-W38",
+		"value" : 9044,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-15",
+		"year_week" : "2020-W38",
+		"value" : 9752,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-16",
+		"year_week" : "2020-W38",
+		"value" : 9810,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-17",
+		"year_week" : "2020-W38",
+		"value" : 10003,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-18",
+		"year_week" : "2020-W38",
+		"value" : 10143,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-21",
+		"year_week" : "2020-W39",
+		"value" : 11031,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-22",
+		"year_week" : "2020-W39",
+		"value" : 10849,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-23",
+		"year_week" : "2020-W39",
+		"value" : 10755,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-24",
+		"year_week" : "2020-W39",
+		"value" : 11041,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-25",
+		"year_week" : "2020-W39",
+		"value" : 11006,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-28",
+		"year_week" : "2020-W40",
+		"value" : 11147,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-29",
+		"year_week" : "2020-W40",
+		"value" : 10941,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-09-30",
+		"year_week" : "2020-W40",
+		"value" : 10855,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-01",
+		"year_week" : "2020-W40",
+		"value" : 10559,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-02",
+		"year_week" : "2020-W40",
+		"value" : 10372,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-05",
+		"year_week" : "2020-W41",
+		"value" : 10949,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-06",
+		"year_week" : "2020-W41",
+		"value" : 10696,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-07",
+		"year_week" : "2020-W41",
+		"value" : 10662,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-08",
+		"year_week" : "2020-W41",
+		"value" : 10645,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-09",
+		"year_week" : "2020-W41",
+		"value" : 10554,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-12",
+		"year_week" : "2020-W42",
+		"value" : 10109,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-13",
+		"year_week" : "2020-W42",
+		"value" : 11297,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-14",
+		"year_week" : "2020-W42",
+		"value" : 11671,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-15",
+		"year_week" : "2020-W42",
+		"value" : 11692,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-16",
+		"year_week" : "2020-W42",
+		"value" : 11784,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-19",
+		"year_week" : "2020-W43",
+		"value" : 12945,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-20",
+		"year_week" : "2020-W43",
+		"value" : 13288,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-21",
+		"year_week" : "2020-W43",
+		"value" : 13698,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-22",
+		"year_week" : "2020-W43",
+		"value" : 14160,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-23",
+		"year_week" : "2020-W43",
+		"value" : 14539,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 16008,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 16696,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 17073,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 17520,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 18162,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 19170,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 19943,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 20325,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 20281,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 20239,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-20",
+		"year_week" : "2020-W34",
+		"value" : 522,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-21",
+		"year_week" : "2020-W34",
+		"value" : 541,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-24",
+		"year_week" : "2020-W35",
+		"value" : 658,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-25",
+		"year_week" : "2020-W35",
+		"value" : 677,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-26",
+		"year_week" : "2020-W35",
+		"value" : 697,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-27",
+		"year_week" : "2020-W35",
+		"value" : 715,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-28",
+		"year_week" : "2020-W35",
+		"value" : 751,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-31",
+		"year_week" : "2020-W36",
+		"value" : 846,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-01",
+		"year_week" : "2020-W36",
+		"value" : 823,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-02",
+		"year_week" : "2020-W36",
+		"value" : 874,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-03",
+		"year_week" : "2020-W36",
+		"value" : 930,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-04",
+		"year_week" : "2020-W36",
+		"value" : 976,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-07",
+		"year_week" : "2020-W37",
+		"value" : 1034,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-08",
+		"year_week" : "2020-W37",
+		"value" : 1051,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-09",
+		"year_week" : "2020-W37",
+		"value" : 1131,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-10",
+		"year_week" : "2020-W37",
+		"value" : 1136,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-11",
+		"year_week" : "2020-W37",
+		"value" : 1181,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-14",
+		"year_week" : "2020-W38",
+		"value" : 1157,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-15",
+		"year_week" : "2020-W38",
+		"value" : 1273,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-16",
+		"year_week" : "2020-W38",
+		"value" : 1281,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-17",
+		"year_week" : "2020-W38",
+		"value" : 1331,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-18",
+		"year_week" : "2020-W38",
+		"value" : 1345,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-21",
+		"year_week" : "2020-W39",
+		"value" : 1417,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-22",
+		"year_week" : "2020-W39",
+		"value" : 1438,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-23",
+		"year_week" : "2020-W39",
+		"value" : 1436,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-24",
+		"year_week" : "2020-W39",
+		"value" : 1445,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-25",
+		"year_week" : "2020-W39",
+		"value" : 1465,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-28",
+		"year_week" : "2020-W40",
+		"value" : 1529,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-29",
+		"year_week" : "2020-W40",
+		"value" : 1535,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-30",
+		"year_week" : "2020-W40",
+		"value" : 1539,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-01",
+		"year_week" : "2020-W40",
+		"value" : 1561,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-02",
+		"year_week" : "2020-W40",
+		"value" : 1566,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-05",
+		"year_week" : "2020-W41",
+		"value" : 1580,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-06",
+		"year_week" : "2020-W41",
+		"value" : 1544,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-07",
+		"year_week" : "2020-W41",
+		"value" : 1568,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-08",
+		"year_week" : "2020-W41",
+		"value" : 1585,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-09",
+		"year_week" : "2020-W41",
+		"value" : 1590,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-12",
+		"year_week" : "2020-W42",
+		"value" : 1546,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-13",
+		"year_week" : "2020-W42",
+		"value" : 1595,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-14",
+		"year_week" : "2020-W42",
+		"value" : 1652,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-15",
+		"year_week" : "2020-W42",
+		"value" : 1702,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-16",
+		"year_week" : "2020-W42",
+		"value" : 1768,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-19",
+		"year_week" : "2020-W43",
+		"value" : 1857,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-20",
+		"year_week" : "2020-W43",
+		"value" : 1911,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-21",
+		"year_week" : "2020-W43",
+		"value" : 1930,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-22",
+		"year_week" : "2020-W43",
+		"value" : 1966,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-23",
+		"year_week" : "2020-W43",
+		"value" : 2031,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 2163,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 2292,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 2368,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 2404,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 2482,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 2650,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 2754,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 2786,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 2802,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 2863,
+		"source" : "Surveillance",
+		"url" : "HOSP & ICU DATA Source: mscbs.gob.es"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W05",
-		"value" : 0.0255661517785733,
+		"value" : 0.0319576897232166,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W06",
-		"value" : 0.0745679426875054,
+		"value" : 0.087351018576792,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W07",
-		"value" : 0.202398701580372,
+		"value" : 0.215181777469658,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W08",
-		"value" : 0.383492276678599,
+		"value" : 0.419710991698244,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W09",
-		"value" : 2.12625162291801,
+		"value" : 2.37339109011088,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W10",
-		"value" : 10.2903760908757,
+		"value" : 11.4919852244687,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W11",
-		"value" : 38.8925083931546,
+		"value" : 45.0901696868104,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W12",
-		"value" : 49.2254947369946,
+		"value" : 60.4106861401204,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W13",
-		"value" : 35.9502704259704,
+		"value" : 44.35088179788,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W14",
-		"value" : 21.1495990588247,
+		"value" : 26.7485862983323,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W15",
-		"value" : 12.0544405635973,
+		"value" : 16.1514163861137,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W16",
-		"value" : 6.65572151302191,
+		"value" : 9.42964898099711,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W17",
-		"value" : 3.75609379880206,
+		"value" : 5.91856413673971,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W18",
-		"value" : 2.35634698892517,
+		"value" : 3.93718737390028,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W19",
-		"value" : 1.97072419959836,
+		"value" : 3.05515513753951,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W20",
-		"value" : 1.28896015216973,
+		"value" : 1.34435348102331,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W21",
-		"value" : 0.994949406716143,
+		"value" : 1.0183850458465,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W22",
-		"value" : 0.841552496044703,
+		"value" : 0.852205059285776,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W23",
-		"value" : 0.668980971539334,
+		"value" : 0.679633534780406,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W24",
-		"value" : 0.485756883792892,
+		"value" : 0.496409447033964,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W25",
-		"value" : 0.466582269958962,
+		"value" : 0.468712782607177,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W26",
-		"value" : 0.394144839919671,
+		"value" : 0.400536377864315,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W27",
-		"value" : 0.43675509288396,
+		"value" : 0.443146630828603,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W28",
-		"value" : 0.556063801183969,
+		"value" : 0.581629952962542,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W29",
-		"value" : 0.960861204344712,
+		"value" : 0.958730691696497,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W30",
-		"value" : 1.55101320790011,
+		"value" : 1.56166577114118,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W31",
-		"value" : 2.36273852686981,
+		"value" : 2.36486903951803,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W32",
-		"value" : 3.33212178180738,
+		"value" : 3.39177613595739,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W33",
-		"value" : 4.92361473002357,
+		"value" : 4.94918088180214,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W34",
-		"value" : 6.24879359721295,
+		"value" : 6.25944616045402,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W35",
-		"value" : 7.31618043396838,
+		"value" : 7.40140093989696,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W36",
-		"value" : 8.1300362655863,
+		"value" : 8.18329908179166,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 8.82458338890421,
+		"value" : 8.87145466716492,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 8.63070673791669,
+		"value" : 8.77558159799527,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 8.08955652527022,
+		"value" : 8.34521804305596,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 7.59101656558805,
+		"value" : 7.938290127247,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 9.14629079878459,
+		"value" : 9.98571278218107,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 9.60222050550248,
+		"value" : 12.0672236394866,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new hospital admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 6.40645153318082,
+		"value" : 15.0201141699118,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 14.1700396232742,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 8.00433601934165,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
@@ -75990,119 +83356,119 @@ let euroData = [
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W06",
-		"value" : 0.0149135885375011,
+		"value" : 0.0170441011857155,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W07",
-		"value" : 0.0255661517785733,
+		"value" : 0.0276966644267877,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W08",
-		"value" : 0.0788289679839342,
+		"value" : 0.0766984553357198,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W09",
-		"value" : 0.366448175492883,
+		"value" : 0.387753301975028,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W10",
-		"value" : 1.48070629050904,
+		"value" : 1.62771166323583,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W11",
-		"value" : 4.7659567940557,
+		"value" : 5.25384419049681,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W12",
-		"value" : 4.95131139445036,
+		"value" : 5.67994672013969,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W13",
-		"value" : 2.77605798062341,
+		"value" : 3.24264025058238,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W14",
-		"value" : 1.20373964624116,
+		"value" : 1.46153167667511,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W15",
-		"value" : 0.57097738972147,
+		"value" : 0.773376091301841,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W16",
-		"value" : 0.364317662844669,
+		"value" : 0.498539959682179,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W17",
-		"value" : 0.247139467192875,
+		"value" : 0.368578688141098,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W18",
-		"value" : 0.185354600394656,
+		"value" : 0.255661517785733,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W19",
-		"value" : 0.174702037153584,
+		"value" : 0.223703828062516,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W20",
-		"value" : 0.0639153794464332,
+		"value" : 0.0724374300392909,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W21",
-		"value" : 0.0660458920946476,
+		"value" : 0.0703069173910765,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W22",
-		"value" : 0.053262816205361,
+		"value" : 0.0553933288535754,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
@@ -76130,7 +83496,7 @@ let euroData = [
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W26",
-		"value" : 0.0468712782607177,
+		"value" : 0.0490017909089321,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
@@ -76158,98 +83524,112 @@ let euroData = [
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W30",
-		"value" : 0.11504768300358,
+		"value" : 0.119308708300009,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W31",
-		"value" : 0.204529214228586,
+		"value" : 0.200268188932157,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W32",
-		"value" : 0.270575106323234,
+		"value" : 0.276966644267877,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W33",
-		"value" : 0.426102529642888,
+		"value" : 0.432494067587531,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W34",
-		"value" : 0.556063801183969,
+		"value" : 0.560324826480397,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W35",
-		"value" : 0.671111484187548,
+		"value" : 0.677503022132192,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W36",
-		"value" : 0.798942243080415,
+		"value" : 0.81598634426613,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 0.690286098021478,
+		"value" : 0.698808148614336,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W38",
-		"value" : 0.664719946242905,
+		"value" : 0.717982762448266,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W39",
-		"value" : 0.619979180630402,
+		"value" : 0.660458920946476,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 0.613587642685758,
+		"value" : 0.686025072725049,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 0.703069173910765,
+		"value" : 0.792550705135771,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W42",
-		"value" : 0.664719946242905,
+		"value" : 0.973644280233999,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
 		"country" : "Spain",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 0.323837922528595,
+		"value" : 1.21865323477866,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 0.96938325493757,
+		"source" : "TESSy COVID-19, national weekly data"
+	},
+	{
+		"country" : "Spain",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 0.389883814623242,
 		"source" : "TESSy COVID-19, national weekly data"
 	},
 	{
@@ -76473,7 +83853,7 @@ let euroData = [
 		"country" : "Sweden",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W37",
-		"value" : 0.0879749486446237,
+		"value" : 0.0781999543507767,
 		"url" : "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
 	},
 	{
@@ -76494,14 +83874,14 @@ let euroData = [
 		"country" : "Sweden",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W40",
-		"value" : 0.117299931526165,
+		"value" : 0.136849920113859,
 		"url" : "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
 	},
 	{
 		"country" : "Sweden",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W41",
-		"value" : 0.1661749029954,
+		"value" : 0.205274880170789,
 		"url" : "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
 	},
 	{
@@ -76515,7 +83895,21 @@ let euroData = [
 		"country" : "Sweden",
 		"indicator" : "Weekly new ICU admissions per 100k",
 		"year_week" : "2020-W43",
-		"value" : 0.273699840227718,
+		"value" : 0.361674788872342,
+		"url" : "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+	},
+	{
+		"country" : "Sweden",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 0.537624686161589,
+		"url" : "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
+	},
+	{
+		"country" : "Sweden",
+		"indicator" : "Weekly new ICU admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 1.00682441226625,
 		"url" : "https://www.folkhalsomyndigheten.se/smittskydd-beredskap/utbrott/aktuella-utbrott/covid-19/bekraftade-fall-i-sverige"
 	},
 	{
@@ -77963,7 +85357,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-03",
 		"year_week" : "2020-W36",
-		"value" : 781,
+		"value" : 782,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -77972,7 +85366,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-04",
 		"year_week" : "2020-W36",
-		"value" : 788,
+		"value" : 789,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -77981,7 +85375,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-05",
 		"year_week" : "2020-W36",
-		"value" : 783,
+		"value" : 784,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -77990,7 +85384,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-06",
 		"year_week" : "2020-W36",
-		"value" : 789,
+		"value" : 790,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -77999,7 +85393,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-07",
 		"year_week" : "2020-W37",
-		"value" : 874,
+		"value" : 875,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78008,7 +85402,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-08",
 		"year_week" : "2020-W37",
-		"value" : 868,
+		"value" : 869,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78017,7 +85411,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-09",
 		"year_week" : "2020-W37",
-		"value" : 894,
+		"value" : 895,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78026,7 +85420,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-10",
 		"year_week" : "2020-W37",
-		"value" : 914,
+		"value" : 915,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78035,7 +85429,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-11",
 		"year_week" : "2020-W37",
-		"value" : 734,
+		"value" : 737,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78044,7 +85438,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-12",
 		"year_week" : "2020-W37",
-		"value" : 768,
+		"value" : 771,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78053,7 +85447,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-13",
 		"year_week" : "2020-W37",
-		"value" : 798,
+		"value" : 801,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78062,7 +85456,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-14",
 		"year_week" : "2020-W38",
-		"value" : 937,
+		"value" : 940,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78071,7 +85465,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-15",
 		"year_week" : "2020-W38",
-		"value" : 1027,
+		"value" : 1030,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78080,7 +85474,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-16",
 		"year_week" : "2020-W38",
-		"value" : 1055,
+		"value" : 1059,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78089,7 +85483,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-17",
 		"year_week" : "2020-W38",
-		"value" : 1115,
+		"value" : 1119,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78098,7 +85492,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-18",
 		"year_week" : "2020-W38",
-		"value" : 1171,
+		"value" : 1175,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78107,7 +85501,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-19",
 		"year_week" : "2020-W38",
-		"value" : 1247,
+		"value" : 1251,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78116,7 +85510,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-20",
 		"year_week" : "2020-W38",
-		"value" : 1345,
+		"value" : 1349,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78125,7 +85519,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-21",
 		"year_week" : "2020-W39",
-		"value" : 1499,
+		"value" : 1504,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78134,7 +85528,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-22",
 		"year_week" : "2020-W39",
-		"value" : 1573,
+		"value" : 1578,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78143,7 +85537,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-23",
 		"year_week" : "2020-W39",
-		"value" : 1651,
+		"value" : 1657,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78152,7 +85546,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-24",
 		"year_week" : "2020-W39",
-		"value" : 1756,
+		"value" : 1762,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78161,7 +85555,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-25",
 		"year_week" : "2020-W39",
-		"value" : 1923,
+		"value" : 1929,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78170,7 +85564,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-26",
 		"year_week" : "2020-W39",
-		"value" : 1940,
+		"value" : 1946,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78179,7 +85573,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-27",
 		"year_week" : "2020-W39",
-		"value" : 2088,
+		"value" : 2096,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78188,7 +85582,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-28",
 		"year_week" : "2020-W40",
-		"value" : 2298,
+		"value" : 2307,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78197,7 +85591,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-29",
 		"year_week" : "2020-W40",
-		"value" : 2316,
+		"value" : 2325,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78206,7 +85600,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-09-30",
 		"year_week" : "2020-W40",
-		"value" : 2420,
+		"value" : 2431,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78215,7 +85609,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-01",
 		"year_week" : "2020-W40",
-		"value" : 2481,
+		"value" : 2492,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78224,7 +85618,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-02",
 		"year_week" : "2020-W40",
-		"value" : 2593,
+		"value" : 2604,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78233,7 +85627,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-03",
 		"year_week" : "2020-W40",
-		"value" : 2734,
+		"value" : 2745,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78242,7 +85636,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-04",
 		"year_week" : "2020-W40",
-		"value" : 2913,
+		"value" : 2924,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78251,7 +85645,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-05",
 		"year_week" : "2020-W41",
-		"value" : 3217,
+		"value" : 3229,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78260,7 +85654,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-06",
 		"year_week" : "2020-W41",
-		"value" : 3480,
+		"value" : 3492,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78269,7 +85663,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-07",
 		"year_week" : "2020-W41",
-		"value" : 3729,
+		"value" : 3741,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78278,7 +85672,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-08",
 		"year_week" : "2020-W41",
-		"value" : 3904,
+		"value" : 3916,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78287,7 +85681,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-09",
 		"year_week" : "2020-W41",
-		"value" : 3979,
+		"value" : 3991,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78296,7 +85690,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-10",
 		"year_week" : "2020-W41",
-		"value" : 4166,
+		"value" : 4182,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78305,7 +85699,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-11",
 		"year_week" : "2020-W41",
-		"value" : 4465,
+		"value" : 4485,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78314,7 +85708,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-12",
 		"year_week" : "2020-W42",
-		"value" : 4741,
+		"value" : 4762,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78323,7 +85717,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-13",
 		"year_week" : "2020-W42",
-		"value" : 5030,
+		"value" : 5050,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78332,7 +85726,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-14",
 		"year_week" : "2020-W42",
-		"value" : 5376,
+		"value" : 5397,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78341,7 +85735,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-15",
 		"year_week" : "2020-W42",
-		"value" : 5673,
+		"value" : 5694,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78350,7 +85744,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-16",
 		"year_week" : "2020-W42",
-		"value" : 6017,
+		"value" : 6039,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78359,7 +85753,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-17",
 		"year_week" : "2020-W42",
-		"value" : 6251,
+		"value" : 6279,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78368,7 +85762,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-18",
 		"year_week" : "2020-W42",
-		"value" : 6516,
+		"value" : 6548,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78377,7 +85771,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-19",
 		"year_week" : "2020-W43",
-		"value" : 6991,
+		"value" : 7032,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78386,7 +85780,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-20",
 		"year_week" : "2020-W43",
-		"value" : 7501,
+		"value" : 7549,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78395,7 +85789,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-21",
 		"year_week" : "2020-W43",
-		"value" : 7762,
+		"value" : 7815,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78404,7 +85798,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-22",
 		"year_week" : "2020-W43",
-		"value" : 7903,
+		"value" : 7970,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78413,7 +85807,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-23",
 		"year_week" : "2020-W43",
-		"value" : 8412,
+		"value" : 8484,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78422,7 +85816,7 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-24",
 		"year_week" : "2020-W43",
-		"value" : 8738,
+		"value" : 8828,
 		"source" : "Country_Website",
 		"url" : "https://coronavirus.data.gov.uk"
 	},
@@ -78431,8 +85825,2382 @@ let euroData = [
 		"indicator" : "Daily hospital occupancy",
 		"date" : "2020-10-25",
 		"year_week" : "2020-W43",
-		"value" : 9199,
+		"value" : 9317,
 		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 9619,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 10419,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 10805,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 11032,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 11208,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 11622,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 11557,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 12402,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 13023,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 13061,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 12993,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 13148,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 13247,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily hospital occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 13617,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-02",
+		"year_week" : "2020-W14",
+		"value" : 1813,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-03",
+		"year_week" : "2020-W14",
+		"value" : 2120,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-04",
+		"year_week" : "2020-W14",
+		"value" : 2309,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-05",
+		"year_week" : "2020-W14",
+		"value" : 2469,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-06",
+		"year_week" : "2020-W15",
+		"value" : 2644,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-07",
+		"year_week" : "2020-W15",
+		"value" : 2864,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-08",
+		"year_week" : "2020-W15",
+		"value" : 2967,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-09",
+		"year_week" : "2020-W15",
+		"value" : 2963,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-10",
+		"year_week" : "2020-W15",
+		"value" : 3228,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-11",
+		"year_week" : "2020-W15",
+		"value" : 3274,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-12",
+		"year_week" : "2020-W15",
+		"value" : 3301,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-13",
+		"year_week" : "2020-W16",
+		"value" : 3277,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-14",
+		"year_week" : "2020-W16",
+		"value" : 3234,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-15",
+		"year_week" : "2020-W16",
+		"value" : 3228,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-16",
+		"year_week" : "2020-W16",
+		"value" : 3222,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-17",
+		"year_week" : "2020-W16",
+		"value" : 3162,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-18",
+		"year_week" : "2020-W16",
+		"value" : 3247,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-19",
+		"year_week" : "2020-W16",
+		"value" : 3176,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-20",
+		"year_week" : "2020-W17",
+		"value" : 3130,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-21",
+		"year_week" : "2020-W17",
+		"value" : 3036,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-22",
+		"year_week" : "2020-W17",
+		"value" : 2964,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-23",
+		"year_week" : "2020-W17",
+		"value" : 2867,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-24",
+		"year_week" : "2020-W17",
+		"value" : 2703,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-25",
+		"year_week" : "2020-W17",
+		"value" : 2702,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-26",
+		"year_week" : "2020-W17",
+		"value" : 2580,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-27",
+		"year_week" : "2020-W18",
+		"value" : 2454,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-28",
+		"year_week" : "2020-W18",
+		"value" : 2347,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-29",
+		"year_week" : "2020-W18",
+		"value" : 2286,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-04-30",
+		"year_week" : "2020-W18",
+		"value" : 2224,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-01",
+		"year_week" : "2020-W18",
+		"value" : 2178,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-02",
+		"year_week" : "2020-W18",
+		"value" : 2068,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-03",
+		"year_week" : "2020-W18",
+		"value" : 2009,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-04",
+		"year_week" : "2020-W19",
+		"value" : 1936,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-05",
+		"year_week" : "2020-W19",
+		"value" : 1874,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-06",
+		"year_week" : "2020-W19",
+		"value" : 1802,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-07",
+		"year_week" : "2020-W19",
+		"value" : 1685,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-08",
+		"year_week" : "2020-W19",
+		"value" : 1641,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-09",
+		"year_week" : "2020-W19",
+		"value" : 1585,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-10",
+		"year_week" : "2020-W19",
+		"value" : 1538,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-11",
+		"year_week" : "2020-W20",
+		"value" : 1485,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-12",
+		"year_week" : "2020-W20",
+		"value" : 1414,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-13",
+		"year_week" : "2020-W20",
+		"value" : 1342,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-14",
+		"year_week" : "2020-W20",
+		"value" : 1314,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-15",
+		"year_week" : "2020-W20",
+		"value" : 1302,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-16",
+		"year_week" : "2020-W20",
+		"value" : 1234,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-17",
+		"year_week" : "2020-W20",
+		"value" : 1196,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-18",
+		"year_week" : "2020-W21",
+		"value" : 1141,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-19",
+		"year_week" : "2020-W21",
+		"value" : 1106,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-20",
+		"year_week" : "2020-W21",
+		"value" : 1034,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-21",
+		"year_week" : "2020-W21",
+		"value" : 1008,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-22",
+		"year_week" : "2020-W21",
+		"value" : 964,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-23",
+		"year_week" : "2020-W21",
+		"value" : 926,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-24",
+		"year_week" : "2020-W21",
+		"value" : 886,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-25",
+		"year_week" : "2020-W22",
+		"value" : 863,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-26",
+		"year_week" : "2020-W22",
+		"value" : 847,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-27",
+		"year_week" : "2020-W22",
+		"value" : 783,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-28",
+		"year_week" : "2020-W22",
+		"value" : 751,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-29",
+		"year_week" : "2020-W22",
+		"value" : 719,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-30",
+		"year_week" : "2020-W22",
+		"value" : 704,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-05-31",
+		"year_week" : "2020-W22",
+		"value" : 679,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-01",
+		"year_week" : "2020-W23",
+		"value" : 652,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-02",
+		"year_week" : "2020-W23",
+		"value" : 636,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-03",
+		"year_week" : "2020-W23",
+		"value" : 602,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-04",
+		"year_week" : "2020-W23",
+		"value" : 571,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-05",
+		"year_week" : "2020-W23",
+		"value" : 554,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-06",
+		"year_week" : "2020-W23",
+		"value" : 540,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-07",
+		"year_week" : "2020-W23",
+		"value" : 515,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-08",
+		"year_week" : "2020-W24",
+		"value" : 509,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-09",
+		"year_week" : "2020-W24",
+		"value" : 491,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-10",
+		"year_week" : "2020-W24",
+		"value" : 439,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-11",
+		"year_week" : "2020-W24",
+		"value" : 390,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-12",
+		"year_week" : "2020-W24",
+		"value" : 393,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-13",
+		"year_week" : "2020-W24",
+		"value" : 390,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-14",
+		"year_week" : "2020-W24",
+		"value" : 393,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-15",
+		"year_week" : "2020-W25",
+		"value" : 385,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-16",
+		"year_week" : "2020-W25",
+		"value" : 378,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-17",
+		"year_week" : "2020-W25",
+		"value" : 357,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-18",
+		"year_week" : "2020-W25",
+		"value" : 352,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-19",
+		"year_week" : "2020-W25",
+		"value" : 330,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-20",
+		"year_week" : "2020-W25",
+		"value" : 315,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-21",
+		"year_week" : "2020-W25",
+		"value" : 310,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-22",
+		"year_week" : "2020-W26",
+		"value" : 340,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-23",
+		"year_week" : "2020-W26",
+		"value" : 311,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-24",
+		"year_week" : "2020-W26",
+		"value" : 316,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-25",
+		"year_week" : "2020-W26",
+		"value" : 276,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-26",
+		"year_week" : "2020-W26",
+		"value" : 268,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-27",
+		"year_week" : "2020-W26",
+		"value" : 270,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-28",
+		"year_week" : "2020-W26",
+		"value" : 270,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-29",
+		"year_week" : "2020-W27",
+		"value" : 262,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-06-30",
+		"year_week" : "2020-W27",
+		"value" : 279,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-01",
+		"year_week" : "2020-W27",
+		"value" : 259,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-02",
+		"year_week" : "2020-W27",
+		"value" : 239,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-03",
+		"year_week" : "2020-W27",
+		"value" : 231,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-04",
+		"year_week" : "2020-W27",
+		"value" : 220,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-05",
+		"year_week" : "2020-W27",
+		"value" : 217,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-06",
+		"year_week" : "2020-W28",
+		"value" : 209,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-07",
+		"year_week" : "2020-W28",
+		"value" : 197,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-08",
+		"year_week" : "2020-W28",
+		"value" : 185,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-09",
+		"year_week" : "2020-W28",
+		"value" : 188,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-10",
+		"year_week" : "2020-W28",
+		"value" : 191,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-11",
+		"year_week" : "2020-W28",
+		"value" : 168,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-12",
+		"year_week" : "2020-W28",
+		"value" : 159,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-13",
+		"year_week" : "2020-W29",
+		"value" : 162,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-14",
+		"year_week" : "2020-W29",
+		"value" : 145,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-15",
+		"year_week" : "2020-W29",
+		"value" : 153,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-16",
+		"year_week" : "2020-W29",
+		"value" : 142,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-17",
+		"year_week" : "2020-W29",
+		"value" : 143,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-18",
+		"year_week" : "2020-W29",
+		"value" : 136,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-19",
+		"year_week" : "2020-W29",
+		"value" : 130,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-20",
+		"year_week" : "2020-W30",
+		"value" : 129,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-21",
+		"year_week" : "2020-W30",
+		"value" : 137,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-22",
+		"year_week" : "2020-W30",
+		"value" : 110,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-23",
+		"year_week" : "2020-W30",
+		"value" : 111,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-24",
+		"year_week" : "2020-W30",
+		"value" : 104,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-25",
+		"year_week" : "2020-W30",
+		"value" : 91,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-26",
+		"year_week" : "2020-W30",
+		"value" : 90,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-27",
+		"year_week" : "2020-W31",
+		"value" : 97,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-28",
+		"year_week" : "2020-W31",
+		"value" : 93,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-29",
+		"year_week" : "2020-W31",
+		"value" : 87,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-30",
+		"year_week" : "2020-W31",
+		"value" : 84,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-07-31",
+		"year_week" : "2020-W31",
+		"value" : 86,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-01",
+		"year_week" : "2020-W31",
+		"value" : 91,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-02",
+		"year_week" : "2020-W31",
+		"value" : 80,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-03",
+		"year_week" : "2020-W32",
+		"value" : 77,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-04",
+		"year_week" : "2020-W32",
+		"value" : 76,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-05",
+		"year_week" : "2020-W32",
+		"value" : 73,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-06",
+		"year_week" : "2020-W32",
+		"value" : 69,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-07",
+		"year_week" : "2020-W32",
+		"value" : 67,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-08",
+		"year_week" : "2020-W32",
+		"value" : 61,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-09",
+		"year_week" : "2020-W32",
+		"value" : 64,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-10",
+		"year_week" : "2020-W33",
+		"value" : 70,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-11",
+		"year_week" : "2020-W33",
+		"value" : 73,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-12",
+		"year_week" : "2020-W33",
+		"value" : 80,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-13",
+		"year_week" : "2020-W33",
+		"value" : 75,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-14",
+		"year_week" : "2020-W33",
+		"value" : 73,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-15",
+		"year_week" : "2020-W33",
+		"value" : 76,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-16",
+		"year_week" : "2020-W33",
+		"value" : 78,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-17",
+		"year_week" : "2020-W34",
+		"value" : 73,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-18",
+		"year_week" : "2020-W34",
+		"value" : 73,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-19",
+		"year_week" : "2020-W34",
+		"value" : 70,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-20",
+		"year_week" : "2020-W34",
+		"value" : 76,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-21",
+		"year_week" : "2020-W34",
+		"value" : 72,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-22",
+		"year_week" : "2020-W34",
+		"value" : 71,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-23",
+		"year_week" : "2020-W34",
+		"value" : 72,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-24",
+		"year_week" : "2020-W35",
+		"value" : 68,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-25",
+		"year_week" : "2020-W35",
+		"value" : 68,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-26",
+		"year_week" : "2020-W35",
+		"value" : 64,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-27",
+		"year_week" : "2020-W35",
+		"value" : 71,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-28",
+		"year_week" : "2020-W35",
+		"value" : 60,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-29",
+		"year_week" : "2020-W35",
+		"value" : 64,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-30",
+		"year_week" : "2020-W35",
+		"value" : 66,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-08-31",
+		"year_week" : "2020-W36",
+		"value" : 69,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-01",
+		"year_week" : "2020-W36",
+		"value" : 82,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-02",
+		"year_week" : "2020-W36",
+		"value" : 81,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-03",
+		"year_week" : "2020-W36",
+		"value" : 76,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-04",
+		"year_week" : "2020-W36",
+		"value" : 69,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-05",
+		"year_week" : "2020-W36",
+		"value" : 65,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-06",
+		"year_week" : "2020-W36",
+		"value" : 69,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-07",
+		"year_week" : "2020-W37",
+		"value" : 77,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-08",
+		"year_week" : "2020-W37",
+		"value" : 80,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-09",
+		"year_week" : "2020-W37",
+		"value" : 80,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-10",
+		"year_week" : "2020-W37",
+		"value" : 78,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-11",
+		"year_week" : "2020-W37",
+		"value" : 77,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-12",
+		"year_week" : "2020-W37",
+		"value" : 85,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-13",
+		"year_week" : "2020-W37",
+		"value" : 91,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-14",
+		"year_week" : "2020-W38",
+		"value" : 105,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-15",
+		"year_week" : "2020-W38",
+		"value" : 115,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-16",
+		"year_week" : "2020-W38",
+		"value" : 124,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-17",
+		"year_week" : "2020-W38",
+		"value" : 127,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-18",
+		"year_week" : "2020-W38",
+		"value" : 138,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-19",
+		"year_week" : "2020-W38",
+		"value" : 141,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-20",
+		"year_week" : "2020-W38",
+		"value" : 162,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-21",
+		"year_week" : "2020-W39",
+		"value" : 181,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-22",
+		"year_week" : "2020-W39",
+		"value" : 211,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-23",
+		"year_week" : "2020-W39",
+		"value" : 228,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-24",
+		"year_week" : "2020-W39",
+		"value" : 243,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-25",
+		"year_week" : "2020-W39",
+		"value" : 262,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-26",
+		"year_week" : "2020-W39",
+		"value" : 256,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-27",
+		"year_week" : "2020-W39",
+		"value" : 271,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-28",
+		"year_week" : "2020-W40",
+		"value" : 297,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-29",
+		"year_week" : "2020-W40",
+		"value" : 314,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-09-30",
+		"year_week" : "2020-W40",
+		"value" : 332,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-01",
+		"year_week" : "2020-W40",
+		"value" : 341,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-02",
+		"year_week" : "2020-W40",
+		"value" : 368,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-03",
+		"year_week" : "2020-W40",
+		"value" : 369,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-04",
+		"year_week" : "2020-W40",
+		"value" : 369,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-05",
+		"year_week" : "2020-W41",
+		"value" : 393,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-06",
+		"year_week" : "2020-W41",
+		"value" : 410,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-07",
+		"year_week" : "2020-W41",
+		"value" : 442,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-08",
+		"year_week" : "2020-W41",
+		"value" : 436,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-09",
+		"year_week" : "2020-W41",
+		"value" : 440,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-10",
+		"year_week" : "2020-W41",
+		"value" : 470,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-11",
+		"year_week" : "2020-W41",
+		"value" : 477,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-12",
+		"year_week" : "2020-W42",
+		"value" : 507,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-13",
+		"year_week" : "2020-W42",
+		"value" : 516,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-14",
+		"year_week" : "2020-W42",
+		"value" : 563,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-15",
+		"year_week" : "2020-W42",
+		"value" : 581,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-16",
+		"year_week" : "2020-W42",
+		"value" : 592,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-17",
+		"year_week" : "2020-W42",
+		"value" : 613,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-18",
+		"year_week" : "2020-W42",
+		"value" : 629,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-19",
+		"year_week" : "2020-W43",
+		"value" : 657,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-20",
+		"year_week" : "2020-W43",
+		"value" : 697,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-21",
+		"year_week" : "2020-W43",
+		"value" : 711,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-22",
+		"year_week" : "2020-W43",
+		"value" : 707,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-23",
+		"year_week" : "2020-W43",
+		"value" : 743,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-24",
+		"year_week" : "2020-W43",
+		"value" : 787,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-25",
+		"year_week" : "2020-W43",
+		"value" : 827,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-26",
+		"year_week" : "2020-W44",
+		"value" : 852,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-27",
+		"year_week" : "2020-W44",
+		"value" : 902,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-28",
+		"year_week" : "2020-W44",
+		"value" : 957,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-29",
+		"year_week" : "2020-W44",
+		"value" : 974,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-30",
+		"year_week" : "2020-W44",
+		"value" : 978,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-10-31",
+		"year_week" : "2020-W44",
+		"value" : 1002,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-01",
+		"year_week" : "2020-W44",
+		"value" : 977,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-02",
+		"year_week" : "2020-W45",
+		"value" : 1075,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-03",
+		"year_week" : "2020-W45",
+		"value" : 1142,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-04",
+		"year_week" : "2020-W45",
+		"value" : 1191,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-05",
+		"year_week" : "2020-W45",
+		"value" : 1181,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-06",
+		"year_week" : "2020-W45",
+		"value" : 1185,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-07",
+		"year_week" : "2020-W45",
+		"value" : 1205,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Daily ICU occupancy",
+		"date" : "2020-11-08",
+		"year_week" : "2020-W45",
+		"value" : 1230,
+		"source" : "Country_Website",
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W09",
+		"value" : 0.007502200545464,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W10",
+		"value" : 0.151544451018373,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W11",
+		"value" : 0.267078339418518,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W12",
+		"value" : 4.9589545605517,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W13",
+		"value" : 20.874122797699,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W14",
+		"value" : 32.4605213201136,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W15",
+		"value" : 27.7251323358167,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W16",
+		"value" : 20.0878921805344,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W17",
+		"value" : 15.9451770393292,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W18",
+		"value" : 14.4717448522001,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W19",
+		"value" : 11.3433272247416,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W20",
+		"value" : 9.56080437513932,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W21",
+		"value" : 8.084371307792,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W22",
+		"value" : 6.63644660251745,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W23",
+		"value" : 5.63265216953437,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W24",
+		"value" : 4.50882252782386,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W25",
+		"value" : 3.91614868473221,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W26",
+		"value" : 3.41200080807703,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W27",
+		"value" : 2.40970681520304,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W28",
+		"value" : 1.95357302203882,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W29",
+		"value" : 1.61747443760204,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W30",
+		"value" : 1.49293790854734,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W31",
+		"value" : 1.26187013174704,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W32",
+		"value" : 1.25286749109249,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W33",
+		"value" : 1.05330895658315,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W34",
+		"value" : 1.01879883407401,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W35",
+		"value" : 1.21085516803789,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W36",
+		"value" : 1.39390886134721,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W37",
+		"value" : 2.09311395218446,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W38",
+		"value" : 2.79381948313079,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W39",
+		"value" : 3.92215044516858,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W40",
+		"value" : 5.27704786367938,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W41",
+		"value" : 7.41667545924571,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W42",
+		"value" : 10.332030591213,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W43",
+		"value" : 13.047827188671,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W44",
+		"value" : 15.4140212407103,
+		"url" : "https://coronavirus.data.gov.uk"
+	},
+	{
+		"country" : "United Kingdom",
+		"indicator" : "Weekly new hospital admissions per 100k",
+		"year_week" : "2020-W45",
+		"value" : 13.6705098339445,
 		"url" : "https://coronavirus.data.gov.uk"
 	}
 ]

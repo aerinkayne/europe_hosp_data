@@ -10,7 +10,8 @@ function getData() {
             return {
                 country: element.country,
                 date: element.date,
-                value: element.value
+                value: element.value,
+                indicator: element.indicator
             } 
         });
         
@@ -79,8 +80,9 @@ function getData() {
                 .attr('data-country', d => d.country)
                 .attr('data-date', d => d.date)
                 .attr('data-occupancy', d => d.value)
+                .attr('data-indicator', d => d.indicator)
                 .append('title')
-                .text(d=>`Country: ${d.country}\nDate: ${d.date}\nOccupancies: ${d.value}`);
+                .text(d=>`Country: ${d.country}\nDate: ${d.date}\n${d.indicator}: ${d.value}`);
                 
             colorHue += 15;
         })

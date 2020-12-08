@@ -2,7 +2,7 @@ const w = 800;
 const h = 600;
 const padding = 50;
 
-
+//dataURL = https://opendata.ecdc.europa.eu/covid19/hospitalicuadmissionrates/json/
 function getData() {
     try { 
 

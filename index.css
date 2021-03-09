@@ -9,6 +9,7 @@
 .altFont {
     font-family: sans-serif;
 }
+
 body {
     background-image: url('./img/bigstock-chart-background-203062333.png');
     background-attachment: fixed;
@@ -16,7 +17,7 @@ body {
     background-repeat: no-repeat;
 }
 nav, footer {
-    position: relative; /* moves these elements in front of the mainContent element */
+    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +28,23 @@ nav, footer {
     text-transform: uppercase;
     background-color: rgba(0,0,20,0.4);
 }
+nav a, footer a {
+    text-decoration: none;
+    color: inherit;
+}
+footer ul, nav ul {
+    width: 80%;
+    min-width: 800px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer ul li, nav ul li {
+    list-style-type: none;
+    height: 70%;
+}
+
 nav {
     border-bottom: 1px solid black;
 }
@@ -40,8 +58,8 @@ footer {
     min-height: 100vh;
     margin: -100px auto;
     border: 2px solid black;
-    border-bottom: 100px solid black;
-    border-top: 100px solid black;
+    border-bottom: 100px solid rgba(0,0,0,0.7);
+    border-top: 100px solid rgba(0,0,0,0.7);
     background-clip: padding-box;
     background-color: #c8c8d0;
     width: 80%;
@@ -50,7 +68,7 @@ footer {
 }
 
 #title {
-    margin: 2.5em auto 0;
+    margin: 2.5em auto 0.5em;
     text-align: center;
 }
 p{
